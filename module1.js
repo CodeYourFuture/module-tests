@@ -63,9 +63,24 @@ function question4() {
   return /* ??? */;
 }
 
+/**
+  Question 5:
+  Write a function called multiply that multiplies two numbers together. It should take two numbers as parameters and return the answer.
+
+  @param { num1, num2 } two mumbers; integer, float, either negative or positive
+  @returns the product of num1 and num2 
+*/
+function question5(num1, num2) {
+  // TODO
+
+  return /* ??? */;
+}
+
+
 module.exports = {
   question1,
   question2,
   question3,
-  question4
+  question4,
+  question5
 };

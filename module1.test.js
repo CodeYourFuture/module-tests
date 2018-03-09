@@ -40,4 +40,21 @@ describe("Answers", function() {
     solution = exercises.question4();
     expect(solution).toEqual(arr);
   });
+
+  it("Q5 - Multiply two numbers", function() {
+    let number1 = 6;
+    let number2 = 23;
+    solution = exercises.question5(number1, number2);
+    expect(solution).toEqual(138);
+
+    number1 = -5;
+    number2 = 5;
+    solution = exercises.question5(number1, number2);
+    expect(solution).toEqual(-25);
+
+    number1 = 0.7;
+    number2 = 2.3;
+    solution = exercises.question5(number1, number2);
+    expect(solution).toEqual(1.61);
+  });
 });
