@@ -90,11 +90,26 @@ function question6( animArr ) {
   return /* ??? */;
 }
 
+/**
+  Question 7:
+  Write a function to use a 'person' object containing their details as 5 key/value pairs
+
+
+  @param { personObj } an array containing the names of a number of animals
+  @returns { string } in the format...
+    "Hi, my name is {firstName} {lastName}. I am {age} years old and work as a {occupation} in {location}."
+*/
+function question7( personObj ) {
+  // TODO
+  return /* ??? */;
+}
+
 module.exports = {
   question1,
   question2,
   question3,
   question4,
   question5,
-  question6
+  question6,
+  question7
 };

@@ -63,5 +63,16 @@ describe("Answers", function() {
     solution = exercises.question6(animals);
     expect(solution).toEqual('The array contains 3 animals. These are: lions and tigers and bears.');
   });
-  
+
+  it("Q7 - Person object", function() {
+    const person = {
+      firstName: 'Sara',
+      lastName: 'Marshall',
+      age: 25,
+      occupation: 'dentist',
+      location: 'Warrington'
+    }
+    solution = exercises.question7(person);
+    expect(solution).toEqual('Hi, my name is Sara Marshall. I am 25 years old and work as a dentist in Warrington.');
+  });
 });
