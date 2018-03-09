@@ -76,11 +76,25 @@ function question5(num1, num2) {
   return /* ??? */;
 }
 
+/**
+  Question 6:
+  Write a function called multiply that multiplies two numbers together. It should take two numbers as parameters and return the answer.
+
+  @param { animArr } an array containing the names of a number of animals
+  @returns { string } in the format...
+    "The array contains { number of animals } animals. These are: {animal1} and {animal2} and {animal3}."
+*/
+function question6( animArr ) {
+  // TODO
+
+  return /* ??? */;
+}
 
 module.exports = {
   question1,
   question2,
   question3,
   question4,
-  question5
+  question5,
+  question6
 };

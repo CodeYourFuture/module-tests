@@ -57,4 +57,11 @@ describe("Answers", function() {
     solution = exercises.question5(number1, number2);
     expect(solution).toEqual(1.61);
   });
+
+  it("Q6 - Animals array", function() {
+    const animals = ['lions', 'tigers', 'bears']
+    solution = exercises.question6(animals);
+    expect(solution).toEqual('The array contains 3 animals. These are: lions and tigers and bears.');
+  });
+  
 });
