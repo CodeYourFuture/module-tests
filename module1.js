@@ -48,8 +48,24 @@ function question3(number1) {
   }
 }
 
+/**
+  Question 4:
+  Write a for loop that loops over the numbers from 0 to 100, returning an array containing only every second number. So it should return [ 0, 2, 4, 6, 8, 10 .... etc.]
+
+  @param none
+  @returns [array 0 ... 100] 
+*/
+function question4() {
+  // TODO
+  for ( /* ??? */ ) {
+    // TODO
+  }
+  return /* ??? */;
+}
+
 module.exports = {
   question1,
   question2,
-  question3
+  question3,
+  question4
 };
