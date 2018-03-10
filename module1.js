@@ -147,3 +147,49 @@ module.exports = {
   question7,
   question8
 };
+
+/**
+  +++++++++++++++++++++++++++++++++++++++++++
+  Question 9:
+  Write a function that takes a retail price and returns that price with VAT 
+
+  @param { retailPrice, taxAmount } two 
+  - retailPrice: string containing the currency and an integer, float, either negative or positive
+  - taxAmount: a integer or float representing the tax amount
+  @returns { totalPrice } a string containing the currency sign too
+*/
+
+function question9( retailPrice ) {
+  // TODO
+  
+  return /* ??? */;
+}
+
+/**
+  +++++++++++++++++++++++++++++++++++++++++++
+  Question 10:
+  Write a high order function that takes a retail price and returns that price with VAT
+
+  @param { retailPrice } two 
+  - retailPrice: string containing the currency and an integer, float, either negative or positive
+  - taxAmount: a integer or float representing the tax amount
+  @returns { totalPrice } a string containing the currency sign too
+*/
+
+function question10( retailPrice ) {
+  // TODO
+  return function extractDigits (retailPrice) {
+    // find the retail value as an integer, float
+    const retailValue = /* ??? */;
+    
+    return function addTax (retailValue, taxAmount) {
+      // make the tax calculations
+      const retailValueWithTax = /* ??? */;
+
+      return function addCurrency ( retailValueWithTax, currency) {
+        // return final result as a string
+        return /* ??? */;
+      }
+    }
+  }
+}
