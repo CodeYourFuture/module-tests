@@ -41,7 +41,7 @@ describe("Answers", function() {
     expect(solution).toEqual(arr);
   });
 
-  xit("Q5 - Multiply two numbers", function() {
+  it("Q5 - Multiply two numbers", function() {
     let number1 = 6;
     let number2 = 23;
     solution = exercises.question5(number1, number2);

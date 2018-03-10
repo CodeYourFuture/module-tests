@@ -91,11 +91,9 @@ function question4() {
 */
 
 function question5(num1, num2) {
-  // TODO
-
-  return /* ??? */;
+  var result = num1 * num2;
+  return Math.round((result)*100)/100;
 }
-
 
 /**
   +++++++++++++++++++++++++++++++++++++++++++
@@ -195,7 +193,7 @@ module.exports = {
   question2,
   question3,
   question4,
-  // question5,
+  question5,
   // question6,
   // question7,
   // question8,
