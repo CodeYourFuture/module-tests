@@ -76,7 +76,7 @@ describe("Answers", function() {
     expect(solution).toEqual('Hi, my name is Sara Marshall. I am 25 years old and work as a dentist in Warrington.');
   });
 
-  xit("Q8 - Array concatenation", function() {
+  it("Q8 - Array concatenation", function() {
     const array1 = ["lions", "tigers", "bears"];
     const array2 = ["penguins", "flamingoes", "eagles"];
     const extra  = "cobras";

@@ -128,10 +128,11 @@ function question6(animArr) {
   @returns { newArr } containing 7 items
 */
 
-// function question8( arr1, arr2, strExtra ) {
-//   // TODO
-//   return /* ??? */;
-// }
+ function question8( arr1, arr2, strExtra ) {
+  let arr= arr1.concat(arr2);
+   arr.push(strExtra);
+   return arr
+}
 
 /**
   +++++++++++++++++++++++++++++++++++++++++++
@@ -185,9 +186,9 @@ module.exports = {
   question3,
   question4,
   //question5
-   question6,
-   question7
-  // question8, 
+  question6,
+  question7,
+  question8 
   // question9,
   // question10
 };
