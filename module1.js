@@ -88,13 +88,9 @@ function question4(){
   @returns the product of num1 and num2 
 */
 
-// function question5(num1, num2) {
-//   // TODO
-
-//   return /* ??? */;
-// }
-
-
+function question5(num1, num2) {
+  return Math.round(num1 * num2, 2);
+}
 /**
   +++++++++++++++++++++++++++++++++++++++++++
   Question 6:
@@ -105,11 +101,10 @@ function question4(){
     "The array contains { number of animals } animals. These are: {animal1} and {animal2} and {animal3}."
 */
 
-// function question6( animArr ) {
-//   // TODO
-
-//   return /* ??? */;
-// }
+function question6(animArr) {
+  animArr.join('and');
+  return "The array contains " + animArr.length + " animals. These are: " + animArr.join(' and ') + "."
+}
 
 
 /**
@@ -192,9 +187,9 @@ module.exports = {
   question1,
   question2,
   question3,
-  question4
-  // question5,
-  // question6,
+  question4,
+  //question5
+   question6
   // question7,
   // question8, 
   // question9,
