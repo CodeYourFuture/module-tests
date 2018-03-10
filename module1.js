@@ -53,10 +53,12 @@ function question2(number1, number2) {
 */
 
 function question3(number1) {
-  if (number1) {
-    return;
-  }
-}
+  if (number1 % 2 === 0) {
+    return "even";
+  } else {
+    return "odd";
+  };
+};
 
 
 /**
@@ -188,8 +190,8 @@ function question9(retailPrice) {
 
 module.exports = {
   question1,
-  question2
-  // question3,
+  question2,
+  question3,
   // question4,
   // question5,
   // question6,
