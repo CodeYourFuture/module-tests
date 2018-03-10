@@ -71,12 +71,14 @@ function question3(number1) {
 */
 
 function question4() {
-  // TODO
-  // for (/* ??? */){
-  //   // TODO
-  // }
-  return /* ??? */;
-}
+  var newArr = [];
+  for (i = 0; i <= 100; i++) {
+    if (i % 2 === 0) {
+      newArr.push(i);
+    } else { continue }
+  };
+  return newArr;
+};
 
 
 /**
@@ -192,7 +194,7 @@ module.exports = {
   question1,
   question2,
   question3,
-  // question4,
+  question4,
   // question5,
   // question6,
   // question7,
