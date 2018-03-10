@@ -104,8 +104,6 @@ function question5(num1, num2) {
 function question6(animArr) {
   return "The array contains " + animArr.length + " animals. These are: " + animArr.join(' and ') + "."
 }
-
-
 /**
   +++++++++++++++++++++++++++++++++++++++++++
   Question 7:
@@ -116,10 +114,9 @@ function question6(animArr) {
     "Hi, my name is {firstName} {lastName}. I am {age} years old and work as a {occupation} in {location}."
 */
 
-// function question7( personObj ) {
-//   // TODO
-//   return /* ??? */;
-// }
+ function question7( personObj ) {
+  return `Hi, my name is ${personObj.firstName} ${personObj.lastName}. I am ${personObj.age} years old and work as a ${personObj.occupation} in ${personObj.location}.`
+ }
 
 
 /**
@@ -188,8 +185,8 @@ module.exports = {
   question3,
   question4,
   //question5
-   question6
-  // question7,
+   question6,
+   question7
   // question8, 
   // question9,
   // question10

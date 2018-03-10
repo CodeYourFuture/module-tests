@@ -64,7 +64,7 @@ describe("Answers", function() {
     expect(solution).toEqual('The array contains 3 animals. These are: lions and tigers and bears.');
   });
 
-  xit("Q7 - Person object", function() {
+  it("Q7 - Person object", function() {
     const person = {
       firstName: 'Sara',
       lastName: 'Marshall',
