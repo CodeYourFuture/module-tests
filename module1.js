@@ -8,7 +8,8 @@
 
 /**
   Question 1
-  Comparing a string with ‘Code Your Future’, return true if they are the same or
+  Comparing a string with ‘Code Your Future’, 
+  return true if they are the same or
   false otherwise
 
   The function takes the following argument:
@@ -17,18 +18,21 @@
 */
 
 function question1(name1) {
-  if (name1) {
-    // TODO:
-    return;
+  if (name1 === 'Code Your Future') {
+    return true;
+  } else {
+    return false;
   }
 }
+
 
 
 /**
   +++++++++++++++++++++++++++++++++++++++++++
   Question 2:
   IF / ELSE Statements:
-  Check if two numbers are equal, if they are return true or otherwise return false
+  Check if two numbers are equal, if they are
+   return true or otherwise return false
   @param {number} number1 a regular integer
   @param {number} number2 a regular integer
   @returns {boolean} true or false
