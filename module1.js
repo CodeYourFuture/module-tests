@@ -137,17 +137,6 @@ function question8( arr1, arr2, strExtra ) {
   return /* ??? */;
 }
 
-module.exports = {
-  question1,
-  question2,
-  question3,
-  question4,
-  question5,
-  question6,
-  question7,
-  question8
-};
-
 /**
   +++++++++++++++++++++++++++++++++++++++++++
   Question 9:
@@ -181,7 +170,7 @@ function question10( retailPrice ) {
   return function extractDigits (retailPrice) {
     // find the retail value as an integer, float
     const retailValue = /* ??? */;
-    
+
     return function addTax (retailValue, taxAmount) {
       // make the tax calculations
       const retailValueWithTax = /* ??? */;
@@ -193,3 +182,16 @@ function question10( retailPrice ) {
     }
   }
 }
+
+module.exports = {
+  question1,
+  question2,
+  question3,
+  question4,
+  question5,
+  question6,
+  question7,
+  question8, 
+  question9,
+  question10
+};
