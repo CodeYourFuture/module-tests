@@ -31,15 +31,9 @@ function question1(name1) {
   @returns {boolean} true or false
 */
 
-// function question2(number1, number2) {
-//   if (number1) {
-//     // TODO:
-//     return;
-//   } else {
-//     // TODO:
-//     return;
-//   }
-// }
+function question2 ( number1, number2) {
+  return number1 === number2;
+}
 
 
 /**
@@ -186,8 +180,8 @@ function question1(name1) {
 
 module.exports = {
   question1,
-  // question2,
-  // question3,
+  question2,
+  question3
   // question4,
   // question5,
   // question6,
