@@ -92,8 +92,8 @@ function question4() {
 
 function question5(num1, num2) {
   var result = num1 * num2;
-  return Math.round((result)*100)/100;
-}
+  return Math.round((result) * 100) / 100;
+};
 
 /**
   +++++++++++++++++++++++++++++++++++++++++++
@@ -106,9 +106,10 @@ function question5(num1, num2) {
 */
 
 function question6(animArr) {
-  // TODO
 
-  return /* ??? */;
+  return "The array contains " + animArr.length + " animals. These are: " + animArr[0] + " and " + animArr[1] + " and " + animArr[2] + ".";
+
+
 }
 
 
@@ -194,7 +195,7 @@ module.exports = {
   question3,
   question4,
   question5,
-  // question6,
+  question6,
   // question7,
   // question8,
   // question9,
