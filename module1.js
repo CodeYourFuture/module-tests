@@ -46,7 +46,7 @@ function question2 ( number1, number2) {
 
 function question3(number1) {
   if (number1 % 2 === 0) {
-    return "even"
+    return "even";
   }
     else {
       return "odd";
@@ -64,13 +64,19 @@ function question3(number1) {
   @returns [array 0 ... 100] 
 */
 
-// function question4() {
-//   // TODO
-//   for ( /* ??? */ ) {
-//     // TODO
-//   }
-//   return /* ??? */;
-// }
+
+function question4(){
+  arr=[]
+  for(let i=0;i<101;i++){
+    arr.push(i);
+  }
+  newArr=[];
+  arr.forEach(function(item){
+    if(item%2===0)
+    newArr.push(item);
+  })
+  return newArr;
+}
 
 
 /**
@@ -185,8 +191,8 @@ function question3(number1) {
 module.exports = {
   question1,
   question2,
-  question3
-  // question4,
+  question3,
+  question4
   // question5,
   // question6,
   // question7,
