@@ -1,10 +1,10 @@
-# JS Modules tests
+# JS Module 1 Exercises
 
-This exam will allow us - and also yourself - to evaludate your current knowledge about javascript programming. No pressure, you won't get a rate for this exam.
+These exercises will allow us - and also yourself - to evaluate your current knowledge about JavaScript programming.
 
-Your code will be evaluated, reviewed and you will receive a feedback from a mentor about where you've done right and where you should improve.
+Your code will be reviewed and you will receive a feedback from a mentor about what you've done well and where you can improve.
 
-Please do not cheat and do not slack/chat with your colleagues.
+Please do complete the questions on your own and do not slack/chat with your colleagues.
 
 You may not use Google or StackOverFlow to find solutions and always try to do it yourself first
 We suggest you to only use the Javascript documentation from [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide).
@@ -14,7 +14,7 @@ We suggest you to only use the Javascript documentation from [MDN](https://devel
 * Read carefully all the code, all comments as well as the unit tests to understand what the code is supposed to do
 * Fill in the parts marked with TODO
 
-**Bonus:** if you're done before the end of the granted time, you can try to modify your code to use the [ES6 syntax](https://babeljs.io/learn-es2015/).
+**Bonus:** if you're done before the end of the allotted time, you can try to modify your code to use the [ES6 syntax](https://babeljs.io/learn-es2015/).
 
 ## Install
 
