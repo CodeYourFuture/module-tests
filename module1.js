@@ -102,7 +102,6 @@ function question5(num1, num2) {
 */
 
 function question6(animArr) {
-  animArr.join('and');
   return "The array contains " + animArr.length + " animals. These are: " + animArr.join(' and ') + "."
 }
 
