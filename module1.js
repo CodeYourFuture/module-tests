@@ -56,11 +56,12 @@ function question2(number1, number2) {
   @returns {string} odd or even
 */
 
+
 function question3(number1) {
   if (number1 % 2 ===0 ) {
-    return "even";
+    return "even ";
   } else {
-    return "odd";
+    return "odd ";
   }
 }
 
