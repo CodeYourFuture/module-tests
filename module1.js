@@ -98,11 +98,12 @@ function question4() {
   @returns the product of num1 and num2 
 */
 
-// function question5(num1, num2) {
-//   // TODO
+function question5(num1, num2) {
+     
+  // TODO
 
-//   return /* ??? */;
-// }
+  return Math.round((num1 * num2)*100)/100 
+}
 
 
 /**
@@ -203,7 +204,7 @@ module.exports = {
   question2,
   question3,
   question4,
-  // question5,
+  question5,
   // question6,
   // question7,
   // question8, 
