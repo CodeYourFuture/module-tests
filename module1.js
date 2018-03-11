@@ -133,7 +133,6 @@ function question6(animArr) {
    arr.push(strExtra);
    return arr
 }
-
 /**
   +++++++++++++++++++++++++++++++++++++++++++
   Question 9:
@@ -145,11 +144,11 @@ function question6(animArr) {
   @returns { totalPrice } a string containing the currency sign too
 */
 
-// function question9( retailPrice ) {
-//   // TODO
-  
-//   return /* ??? */;
-// }
+ function question9( retailPrice="10",taxAmount ) {
+  var rp=parseInt(retailPrice)
+  var ta=parseInt(taxAmount);
+  console.log(rp,ta,"rp")
+  }
 
 /**
   +++++++++++++++++++++++++++++++++++++++++++
@@ -188,7 +187,7 @@ module.exports = {
   //question5
   question6,
   question7,
-  question8 
-  // question9,
+  question8,
+  question9
   // question10
 };
