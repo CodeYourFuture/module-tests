@@ -59,9 +59,9 @@ function question2(number1, number2) {
 
 function question3(number1) {
   if (number1 % 2 ===0 ) {
-    return "even ";
+    return "even";
   } else {
-    return "odd ";
+    return "odd";
   }
 }
 
@@ -75,15 +75,20 @@ function question3(number1) {
   @returns [array 0 ... 100] 
 */
 
-// function question4() {
-//   // TODO
-//   for ( /* ??? */ ) {
-//     // TODO
-//   }
-//   return /* ??? */;
-// }
+function question4() {
+  // TODO
+  var num=[]
+          var arr =[]
+          for ( var i = 0; i<=100; i++ ) {
+              num.push(i);
+          }
 
-
+            // TODO
+    
+          arr = num.filter(x => x % 2 === 0);
+          return arr
+          }
+        
 /**
   +++++++++++++++++++++++++++++++++++++++++++
   Question 5:
@@ -197,7 +202,7 @@ module.exports = {
   question1,
   question2,
   question3,
-  // question4,
+  question4,
   // question5,
   // question6,
   // question7,
