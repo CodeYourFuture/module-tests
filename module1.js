@@ -17,7 +17,7 @@
 */
 
 function question1(name1) {
-  return name1==="Code Your Future" ;
+  return name1 === "Code Your Future";
 }
 
 
@@ -31,7 +31,7 @@ function question1(name1) {
   @returns {boolean} true or false
 */
 
-function question2 ( number1, number2) {
+function question2(number1, number2) {
   return number1 === number2;
 }
 
@@ -48,10 +48,10 @@ function question3(number1) {
   if (number1 % 2 === 0) {
     return "even";
   }
-    else {
-      return "odd";
-    }
+  else {
+    return "odd";
   }
+}
 
 
 
@@ -65,15 +65,15 @@ function question3(number1) {
 */
 
 
-function question4(){
-  arr=[]
-  for(let i=0;i<101;i++){
+function question4() {
+  arr = []
+  for (let i = 0; i < 101; i++) {
     arr.push(i);
   }
-  newArr=[];
-  arr.forEach(function(item){
-    if(item%2===0)
-    newArr.push(item);
+  newArr = [];
+  arr.forEach(function (item) {
+    if (item % 2 === 0)
+      newArr.push(item);
   })
   return newArr;
 }
@@ -114,9 +114,9 @@ function question6(animArr) {
     "Hi, my name is {firstName} {lastName}. I am {age} years old and work as a {occupation} in {location}."
 */
 
- function question7( personObj ) {
+function question7(personObj) {
   return `Hi, my name is ${personObj.firstName} ${personObj.lastName}. I am ${personObj.age} years old and work as a ${personObj.occupation} in ${personObj.location}.`
- }
+}
 
 
 /**
@@ -128,10 +128,10 @@ function question6(animArr) {
   @returns { newArr } containing 7 items
 */
 
- function question8( arr1, arr2, strExtra ) {
-  let arr= arr1.concat(arr2);
-   arr.push(strExtra);
-   return arr
+function question8(arr1, arr2, strExtra) {
+  let arr = arr1.concat(arr2);
+  arr.push(strExtra);
+  return arr
 }
 /**
   +++++++++++++++++++++++++++++++++++++++++++
@@ -144,11 +144,11 @@ function question6(animArr) {
   @returns { totalPrice } a string containing the currency sign too
 */
 
- function question9( retailPrice="10",taxAmount ) {
-  var rp=parseInt(retailPrice)
-  var ta=parseInt(taxAmount);
-  console.log(rp,ta,"rp")
-  }
+function question9(retailPrice, taxAmount) {
+  var rp = parseFloat(retailPrice.replace(/[^0-9-.]/g, ''))
+  res = rp + taxAmount * rp
+  return `£${res}`
+}
 
 /**
   +++++++++++++++++++++++++++++++++++++++++++
