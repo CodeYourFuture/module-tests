@@ -16,10 +16,10 @@
   @returns {boolean} true or false
 */
 
-function question1(name1) {
-  return name1 === "Code Your Future";
-}
-
+// function question1(name1) {
+//   return name1 === "Code Your Future";
+// }
+const question1 = name1 => name1 === "Code Your Future"; //es6
 
 /**
   +++++++++++++++++++++++++++++++++++++++++++
@@ -31,10 +31,10 @@ function question1(name1) {
   @returns {boolean} true or false
 */
 
-function question2(number1, number2) {
-  return number1 === number2;
-}
-
+// function question2(number1, number2) {
+//   return number1 === number2;
+// }
+const question2 = (number1, number2) => number1 === number2; //es6
 
 /**
   +++++++++++++++++++++++++++++++++++++++++++
@@ -44,41 +44,50 @@ function question2(number1, number2) {
   @returns {string} odd or even
 */
 
-function question3(number1) {
-  if (number1 % 2 === 0) {
-    return "even";
-  }
-  else {
-    return "odd";
-  }
+// function question3(number1) {
+//   if (number1 % 2 === 0) {
+//     return "even";
+//   }
+//   else {
+//     return "odd";
+//   }
+// }
+const question3 = number1 =>number1%2===0?"even":"odd"; //es6
+
+
+
+  /**
+    +++++++++++++++++++++++++++++++++++++++++++
+    Question 4:
+    Write a for loop that loops over the numbers from 0 to 100, returning an array containing only every second number. So it should return [ 0, 2, 4, 6, 8, 10 .... etc.]
+  
+    @param none
+    @returns [array 0 ... 100] 
+  */
+
+
+  // function question4() {
+  //   arr = []
+  //   for (let i = 0; i < 101; i++) {
+  //     arr.push(i);
+  //   }
+  //   newArr = [];
+  //   arr.forEach(function (item) {
+  //     if (item % 2 === 0)
+  //       newArr.push(item);
+  //   })
+  //   return newArr;
+  // }
+
+// const question4=()=>for (var i = 0; i < 100; i+=2) //how to write for loop with arrow function???
+
+//refactored version
+function question4(){
+  let arr=[];
+  for (let i=0;i<=100;i+=2)
+  arr.push(i);
+return arr;
 }
-
-
-
-/**
-  +++++++++++++++++++++++++++++++++++++++++++
-  Question 4:
-  Write a for loop that loops over the numbers from 0 to 100, returning an array containing only every second number. So it should return [ 0, 2, 4, 6, 8, 10 .... etc.]
-
-  @param none
-  @returns [array 0 ... 100] 
-*/
-
-
-function question4() {
-  arr = []
-  for (let i = 0; i < 101; i++) {
-    arr.push(i);
-  }
-  newArr = [];
-  arr.forEach(function (item) {
-    if (item % 2 === 0)
-      newArr.push(item);
-  })
-  return newArr;
-}
-
-
 /**
   +++++++++++++++++++++++++++++++++++++++++++
   Question 5:
@@ -88,9 +97,10 @@ function question4() {
   @returns the product of num1 and num2 
 */
 
-function question5(num1, num2) {
-  return Math.round(num1 * num2, 2);
-}
+// function question5(num1, num2) {
+//   return (( num1 * num2 ) * 100) / 100;
+// }
+const question5 = (num1,num2)=> (( num1 * num2 ) * 100) / 100 //es6
 /**
   +++++++++++++++++++++++++++++++++++++++++++
   Question 6:
@@ -101,9 +111,10 @@ function question5(num1, num2) {
     "The array contains { number of animals } animals. These are: {animal1} and {animal2} and {animal3}."
 */
 
-function question6(animArr) {
-  return "The array contains " + animArr.length + " animals. These are: " + animArr.join(' and ') + "."
-}
+// function question6(animArr) {
+//   return "The array contains " + animArr.length + " animals. These are: " + animArr.join(' and ') + "."
+// }
+const question6 = animArr => `The array contains ${animArr.length} animals. These are: ${animArr.join(' and ')}.` //es6
 /**
   +++++++++++++++++++++++++++++++++++++++++++
   Question 7:
@@ -113,11 +124,8 @@ function question6(animArr) {
   @returns { string } in the format...
     "Hi, my name is {firstName} {lastName}. I am {age} years old and work as a {occupation} in {location}."
 */
-
-function question7(personObj) {
-  return `Hi, my name is ${personObj.firstName} ${personObj.lastName}. I am ${personObj.age} years old and work as a ${personObj.occupation} in ${personObj.location}.`
-}
-
+//refactored es6 version
+const question7=obj=>`Hi, my name is ${obj.firstName} ${obj.lastName}. I am ${obj.age} years old and work as a ${obj.occupation} in ${obj.location}.`
 
 /**
   +++++++++++++++++++++++++++++++++++++++++++
@@ -133,6 +141,7 @@ function question8(arr1, arr2, strExtra) {
   arr.push(strExtra);
   return arr
 }
+//how to convert it to es6???
 /**
   +++++++++++++++++++++++++++++++++++++++++++
   Question 9:
@@ -145,10 +154,11 @@ function question8(arr1, arr2, strExtra) {
 */
 
 function question9(retailPrice, taxAmount) {
-  var rp = parseFloat(retailPrice.replace(/[^0-9-.]/g, ''))
-  res = rp + taxAmount * rp
+  let rpStringToNumber = parseFloat(retailPrice.replace(/[^0-9-.]/g, ''))
+  res = (taxAmount + 1) * rpStringToNumber;
   return `£${res}`
 }
+//how to ceovert it to es6???
 
 /**
   +++++++++++++++++++++++++++++++++++++++++++
@@ -184,7 +194,7 @@ module.exports = {
   question2,
   question3,
   question4,
-  //question5
+  question5,
   question6,
   question7,
   question8,
