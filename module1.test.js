@@ -23,7 +23,7 @@ describe("Answers", function() {
     expect(solution).toEqual(true);
   });
 
-  xit("Q3 - Is the number odd or even?", function() {
+  it("Q3 - Is the number odd or even?", function() {
     solution = exercises.question3(3);
     expect(solution).toEqual("odd");
     solution = exercises.question3(14);

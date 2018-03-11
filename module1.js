@@ -56,11 +56,13 @@ function question2(number1, number2) {
   @returns {string} odd or even
 */
 
-// function question3(number1) {
-//   if (number1) {
-//     return;
-//   }
-// }
+function question3(number1) {
+  if (number1 % 2 ===0 ) {
+    return "even";
+  } else {
+    return "odd";
+  }
+}
 
 
 /**
@@ -193,7 +195,7 @@ function question2(number1, number2) {
 module.exports = {
   question1,
   question2,
-  // question3,
+  question3,
   // question4,
   // question5,
   // question6,
