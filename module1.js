@@ -94,7 +94,7 @@ function question5(num1, num2) {
 /**
   +++++++++++++++++++++++++++++++++++++++++++
   Question 6:
-  Write a function called multiply that multiplies two numbers together. It should take two numbers as parameters and return the answer.
+  Write a function that takes an array as a parameter, establishes how many items it contains, and then writes out the names of the animals into a string.
 
   @param { animArr } an array containing the names of a number of animals
   @returns { string } in the format...
