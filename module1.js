@@ -52,41 +52,41 @@ const question2 = (number1, number2) => number1 === number2; //es6
 //     return "odd";
 //   }
 // }
-const question3 = number1 =>number1%2===0?"even":"odd"; //es6
+const question3 = number1 => number1 % 2 === 0 ? "even" : "odd"; //es6
 
 
 
-  /**
-    +++++++++++++++++++++++++++++++++++++++++++
-    Question 4:
-    Write a for loop that loops over the numbers from 0 to 100, returning an array containing only every second number. So it should return [ 0, 2, 4, 6, 8, 10 .... etc.]
-  
-    @param none
-    @returns [array 0 ... 100] 
-  */
+/**
+  +++++++++++++++++++++++++++++++++++++++++++
+  Question 4:
+  Write a for loop that loops over the numbers from 0 to 100, returning an array containing only every second number. So it should return [ 0, 2, 4, 6, 8, 10 .... etc.]
+ 
+  @param none
+  @returns [array 0 ... 100] 
+*/
 
 
-  // function question4() {
-  //   arr = []
-  //   for (let i = 0; i < 101; i++) {
-  //     arr.push(i);
-  //   }
-  //   newArr = [];
-  //   arr.forEach(function (item) {
-  //     if (item % 2 === 0)
-  //       newArr.push(item);
-  //   })
-  //   return newArr;
-  // }
+// function question4() {
+//   arr = []
+//   for (let i = 0; i < 101; i++) {
+//     arr.push(i);
+//   }
+//   newArr = [];
+//   arr.forEach(function (item) {
+//     if (item % 2 === 0)
+//       newArr.push(item);
+//   })
+//   return newArr;
+// }
 
 // const question4=()=>for (var i = 0; i < 100; i+=2) //how to write for loop with arrow function???
 
 //refactored version
-function question4(){
-  let arr=[];
-  for (let i=0;i<=100;i+=2)
-  arr.push(i);
-return arr;
+function question4() {
+  let arr = [];
+  for (let i = 0; i <= 100; i += 2)
+    arr.push(i);
+  return arr;
 }
 /**
   +++++++++++++++++++++++++++++++++++++++++++
@@ -100,7 +100,7 @@ return arr;
 // function question5(num1, num2) {
 //   return (( num1 * num2 ) * 100) / 100;
 // }
-const question5 = (num1,num2)=> (( num1 * num2 ) * 100) / 100 //es6
+const question5 = (num1, num2) => ((num1 * num2) * 100) / 100 //es6
 /**
   +++++++++++++++++++++++++++++++++++++++++++
   Question 6:
@@ -125,7 +125,7 @@ const question6 = animArr => `The array contains ${animArr.length} animals. Thes
     "Hi, my name is {firstName} {lastName}. I am {age} years old and work as a {occupation} in {location}."
 */
 //refactored es6 version
-const question7=obj=>`Hi, my name is ${obj.firstName} ${obj.lastName}. I am ${obj.age} years old and work as a ${obj.occupation} in ${obj.location}.`
+const question7 = obj => `Hi, my name is ${obj.firstName} ${obj.lastName}. I am ${obj.age} years old and work as a ${obj.occupation} in ${obj.location}.`
 
 /**
   +++++++++++++++++++++++++++++++++++++++++++
@@ -136,12 +136,14 @@ const question7=obj=>`Hi, my name is ${obj.firstName} ${obj.lastName}. I am ${ob
   @returns { newArr } containing 7 items
 */
 
-function question8(arr1, arr2, strExtra) {
-  let arr = arr1.concat(arr2);
-  arr.push(strExtra);
-  return arr
-}
-//how to convert it to es6???
+// function question8(arr1, arr2, strExtra) {
+//   let arr=arr1.concat(arr2); //concat two arrays in es6 can be like [...arr1,...arr2] 
+//   arr.push(strExtra);
+//   return arr
+// }
+
+//refactored to es6
+const question8 = (arr1, arr2, strExtra) => [...arr1, ...arr2, strExtra]
 /**
   +++++++++++++++++++++++++++++++++++++++++++
   Question 9:
