@@ -115,6 +115,7 @@ const question5 = (num1, num2) => ((num1 * num2) * 100) / 100 //es6
 //   return "The array contains " + animArr.length + " animals. These are: " + animArr.join(' and ') + "."
 // }
 const question6 = animArr => `The array contains ${animArr.length} animals. These are: ${animArr.join(' and ')}.` //es6
+ //have to think about how to use spread operator here arr=[a,b] can be [...arr] = a b in es6
 /**
   +++++++++++++++++++++++++++++++++++++++++++
   Question 7:
@@ -157,7 +158,7 @@ const question8 = (arr1, arr2, strExtra) => [...arr1, ...arr2, strExtra]
 
 function question9(retailPrice, taxAmount) {
   let rpStringToNumber = parseFloat(retailPrice.replace(/[^0-9-.]/g, ''))
-  res = (taxAmount + 1) * rpStringToNumber;
+  let res = (taxAmount + 1) * rpStringToNumber;
   return `£${res}`
 }
 //how to ceovert it to es6???
