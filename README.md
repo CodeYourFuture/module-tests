@@ -36,7 +36,9 @@ Fork and clone this repository to your computer and install the packages with `n
 
 ```sh
 git clone https://github.com/codeyourfuture/module-tests.git
+
 cd module-tests
+
 npm install
 ```
 
