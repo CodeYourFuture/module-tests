@@ -170,11 +170,16 @@ function question8( arr1, arr2, strExtra ) {
   @returns { totalPrice } a string containing the currency sign too
 */
 
-// function question9( retailPrice ) {
-//   // TODO
-  
-//   return /* ??? */;
-// }
+function question9( retailPrice, taxAmount ) {
+  var retailPrice1 = retailPrice.replace(/[^0-9\.]+/g,"");
+  var retailPrice2 = parseInt(retailPrice1)
+  var tax1 = (20 * retailPrice1)/100
+  var final = retailPrice2 + tax1
+  // TODO
+
+  return final;
+    }
+
 
 /**
   +++++++++++++++++++++++++++++++++++++++++++
@@ -214,6 +219,6 @@ module.exports = {
   question6,
   question7,
   question8, 
-  // question9,
+  question9,
   // question10
 };
