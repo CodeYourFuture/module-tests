@@ -116,12 +116,13 @@ function question5(num1, num2) {
     "The array contains { number of animals } animals. These are: {animal1} and {animal2} and {animal3}."
 */
 
-// function question6( animArr ) {
-//   // TODO
+function question6( animArr ) {
+  // TODO
 
-//   return /* ??? */;
-// }
-
+  for (var i=0; i<animArr.length; i++) {
+    return "The array contains" + " " + animArr.length + " " + "animals." + " These are:" + " " + animArr[0] + " " + "and" + " " + animArr[1] + " " + "and" + " " + animArr[2] + "."
+}
+}
 
 /**
   +++++++++++++++++++++++++++++++++++++++++++
@@ -205,7 +206,7 @@ module.exports = {
   question3,
   question4,
   question5,
-  // question6,
+  question6,
   // question7,
   // question8, 
   // question9,
