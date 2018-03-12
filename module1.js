@@ -109,7 +109,7 @@ function question6(animArr) {
 
   // return "The array contains " + animArr.length + " animals. These are: " + animArr[0] + " and " + animArr[1] + " and " + animArr[2] + ".";
   return "The array contains " + animArr.length + " animals. These are: " + animArr.join(' and ') + "."
-}
+};
 
 
 /**
@@ -123,9 +123,10 @@ function question6(animArr) {
 */
 
 function question7(personObj) {
-  // TODO
-  return /* ??? */;
-}
+
+return "Hi, my name is " +personObj.firstName +" " +personObj.lastName +". I am " +personObj.age +" years old and work as a " +personObj.occupation +" in " +personObj.location +".";
+
+};
 
 
 /**
@@ -195,7 +196,7 @@ module.exports = {
   question4,
   question5,
   question6,
-  // question7,
+  question7,
   // question8,
   // question9,
   // question10
