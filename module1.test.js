@@ -58,7 +58,7 @@ describe("Answers", function() {
     expect(solution).toEqual(1.61);
   });
 
-  xit("Q6 - Animals array", function() {
+  it("Q6 - Animals array", function() {
     const animals = ['lions', 'tigers', 'bears']
     solution = exercises.question6(animals);
     expect(solution).toEqual('The array contains 3 animals. These are: lions and tigers and bears.');
