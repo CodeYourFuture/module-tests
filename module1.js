@@ -134,10 +134,14 @@ function question6( animArr ) {
     "Hi, my name is {firstName} {lastName}. I am {age} years old and work as a {occupation} in {location}."
 */
 
-// function question7( personObj ) {
-//   // TODO
-//   return /* ??? */;
-// }
+
+function question7( personObj ) {
+  for (var i = 0; i<personObj.length; i++ ){
+  }
+   return "Hi, my name is" + " " + personObj.firstName + " " +  personObj.lastName + "." + " " + "I am" + " " + personObj.age + " " + "years old and work as a" + " " + personObj.occupation + " " + "in" + " " + personObj.location + "."
+
+  // TODO
+}
 
 
 /**
@@ -207,7 +211,7 @@ module.exports = {
   question4,
   question5,
   question6,
-  // question7,
+  question7,
   // question8, 
   // question9,
   // question10
