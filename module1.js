@@ -153,10 +153,11 @@ function question7( personObj ) {
   @returns { newArr } containing 7 items
 */
 
-// function question8( arr1, arr2, strExtra ) {
-//   // TODO
-//   return /* ??? */;
-// }
+function question8( arr1, arr2, strExtra ) {
+  // TODO
+  
+  return arr1.concat(arr2, strExtra);
+}
 
 /**
   +++++++++++++++++++++++++++++++++++++++++++
@@ -212,7 +213,7 @@ module.exports = {
   question5,
   question6,
   question7,
-  // question8, 
+  question8, 
   // question9,
   // question10
 };
