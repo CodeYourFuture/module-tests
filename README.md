@@ -7,7 +7,8 @@ Your code will be reviewed and you will receive a feedback from a mentor about w
 Please do complete the questions on your own and do not slack/chat with your colleagues.
 
 You may not use Google or StackOverFlow to find solutions and always try to do it yourself first
-We suggest you to only use the Javascript documentation from [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide).
+We suggest you to only use the Javascript documentation from [MDN]
+(https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide).
 
 ## Instructions
 
