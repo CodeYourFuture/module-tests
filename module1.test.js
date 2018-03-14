@@ -96,6 +96,8 @@ describe("Answers", function() {
     // tax is 20% of the retail price
     const tax = 0.2;
     const retailPrice = "£10"; 
+    var taxAmount = (20 * retailPrice)/100
+
     solution = exercises.question9(retailPrice, taxAmount);
     expect(solution).toEqual("£12")
   })

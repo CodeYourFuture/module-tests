@@ -173,12 +173,12 @@ function question8( arr1, arr2, strExtra ) {
 function question9( retailPrice, taxAmount ) {
   var retailPrice1 = retailPrice.replace(/[^0-9\.]+/g,"");
   var retailPrice2 = parseInt(retailPrice1)
-  var tax1 = (20 * retailPrice1)/100
-  var final = retailPrice2 + tax1
+  var taxAmount = (20 * retailPrice1)/100
+  var final = retailPrice2 + taxAmount
   // TODO
-
-  return final;
-    }
+ //  add double quotes to result in and currancy
+ return ("£"+ final + "")   
+ }
 
 
 /**
