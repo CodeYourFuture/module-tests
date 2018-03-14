@@ -124,7 +124,7 @@ function question6(animArr) {
 
 function question7(personObj) {
 
-return "Hi, my name is " +personObj.firstName +" " +personObj.lastName +". I am " +personObj.age +" years old and work as a " +personObj.occupation +" in " +personObj.location +".";
+  return "Hi, my name is " + personObj.firstName + " " + personObj.lastName + ". I am " + personObj.age + " years old and work as a " + personObj.occupation + " in " + personObj.location + ".";
 
 };
 
@@ -139,9 +139,8 @@ return "Hi, my name is " +personObj.firstName +" " +personObj.lastName +". I am 
 */
 
 function question8(arr1, arr2, strExtra) {
-  // TODO
-  return /* ??? */;
-}
+  return newArr = arr1.concat(arr2, strExtra);
+};
 
 /**
   +++++++++++++++++++++++++++++++++++++++++++
@@ -154,11 +153,11 @@ function question8(arr1, arr2, strExtra) {
   @returns { totalPrice } a string containing the currency sign too
 */
 
-function question9(retailPrice) {
-  // TODO
-
-  return /* ??? */;
-}
+function question9(retailPrice, taxAmount) {
+  var priceNumber = parseFloat(retailPrice.slice(1));
+  var totalPrice = priceNumber * taxAmount + priceNumber;
+  return '£' + totalPrice;
+};
 
 /**
   +++++++++++++++++++++++++++++++++++++++++++
@@ -197,7 +196,7 @@ module.exports = {
   question5,
   question6,
   question7,
-  // question8,
-  // question9,
+  question8,
+  question9,
   // question10
 };

@@ -76,7 +76,7 @@ describe("Answers", function() {
     expect(solution).toEqual('Hi, my name is Sara Marshall. I am 25 years old and work as a dentist in Warrington.');
   });
 
-  xit("Q8 - Array concatenation", function() {
+  it("Q8 - Array concatenation", function() {
     const array1 = ["lions", "tigers", "bears"];
     const array2 = ["penguins", "flamingoes", "eagles"];
     const extra  = "cobras";
@@ -92,9 +92,9 @@ describe("Answers", function() {
     ]);
   });
 
-  xit("Q9 - Tax addition part1", function() {
+  it("Q9 - Tax addition part1", function() {
     // tax is 20% of the retail price
-    const tax = 0.2;
+    const taxAmount = 0.2;
     const retailPrice = "£10"; 
     solution = exercises.question9(retailPrice, taxAmount);
     expect(solution).toEqual("£12")
