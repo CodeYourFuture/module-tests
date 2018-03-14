@@ -1,9 +1,12 @@
 /**
   +++++++++++++++++++++++++++++++++++++++++++
   Welcome to JS Test 1!
-  Please answer the following questions by filling in the parts marked with TODO:
+  Please answer the following questions by
+   filling in the parts marked with TODO:
 
-  Please UNCOMMENT each function, and its associated name in the module.exports object at the bottom of the file, as you reach them.
+  Please UNCOMMENT each function, and its associated 
+  name in the module.exports object at the bottom of the file,
+   as you reach them.
 */
 
 /**
@@ -18,6 +21,7 @@
 */
 
 function question1(name1) {
+  // console.log('Q1 called');
   if (name1 === 'Code Your Future') {
     return true;
   } else {
@@ -38,15 +42,20 @@ function question1(name1) {
   @returns {boolean} true or false
 */
 
-// function question2(number1, number2) {
-//   if (number1) {
-//     // TODO:
-//     return;
-//   } else {
-//     // TODO:
-//     return;
-//   }
-// }
+function question2( number1, number2) {
+  console.log('Q2 called');
+   if (number1 === number2) {
+    
+    // TODO:
+     return  true;
+   } else {
+    //  TODO:
+    return false;
+  
+    }
+  (number1 === number2) 
+  return true;
+}
 
 
 /**
@@ -57,37 +66,64 @@ function question1(name1) {
   @returns {string} odd or even
 */
 
-// function question3(number1) {
-//   if (number1) {
-//     return;
-//   }
-// }
+function question3(number1) {
+  // for ( let i=0;i < number1.length; i++)
+  if (number1 % 2 === 0) {
+    return "even";
+  } else {
+    return  "odd";
+  }
+}
 
+// function question3(number1) {
+//   +  if (number1 % 2 === 0) {
+//   +    return "even";
+//   +  } else {
+//   +    return "odd";
+//   +  };
+//   +};
 
 /**
   +++++++++++++++++++++++++++++++++++++++++++
   Question 4:
-  Write a for loop that loops over the numbers from 0 to 100, returning an array containing only every second number. So it should return [ 0, 2, 4, 6, 8, 10 .... etc.]
+  Write a for loop that loops over the numbers 
+  from 0 to 100, returning an array containing 
+  only every second number. 
+  So it should return [ 0, 2, 4, 6, 8, 10 .... etc.]
 
   @param none
   @returns [array 0 ... 100] 
 */
 
+ function question4() {
+   var newNumb= []
+   // TODO
+   for ( i=0; i<=100; i++ ) {
+  if( i%2 === 0){newNumb.push(i)}
+    // TODO else {continue}
+   }
+   return newNumb;
+   }
 // function question4() {
-//   // TODO
-//   for ( /* ??? */ ) {
-//     // TODO
-//   }
-//   return /* ??? */;
-// }
+//   +  var newArr = [];
+//   +  for (i = 0; i <= 100; i++) {
+//   +    if (i % 2 === 0) {
+//   +      newArr.push(i);
+//   +    } else { continue }
+//   +  };
+//   +  return newArr;
+//   +};
 
 
 /**
   +++++++++++++++++++++++++++++++++++++++++++
   Question 5:
-  Write a function called multiply that multiplies two numbers together. It should take two numbers as parameters and return the answer.
+  Write a function called multiply that multiplies
+   two numbers together. It should take two numbers 
+   as parameters and return the answer.
 
-  @param { num1, num2 } two mumbers; integer, float, either negative or positive
+  @param { num1, num2 } two mumbers; 
+  integer, float, either negative or positive
   @returns the product of num1 and num2 
 */
 
@@ -101,11 +137,15 @@ function question1(name1) {
 /**
   +++++++++++++++++++++++++++++++++++++++++++
   Question 6:
-  Write a function called multiply that multiplies two numbers together. It should take two numbers as parameters and return the answer.
+  Write a function called multiply that multiplies 
+  two numbers together. It should take two numbers 
+  as parameters and return the answer.
 
-  @param { animArr } an array containing the names of a number of animals
+  @param { animArr } an array containing the names of
+   a number of animals
   @returns { string } in the format...
-    "The array contains { number of animals } animals. These are: {animal1} and {animal2} and {animal3}."
+    "The array contains { number of animals } animals.
+     These are: {animal1} and {animal2} and {animal3}."
 */
 
 // function question6( animArr ) {
@@ -118,11 +158,14 @@ function question1(name1) {
 /**
   +++++++++++++++++++++++++++++++++++++++++++
   Question 7:
-  Write a function to use a 'person' object containing their details as 5 key/value pairs
+  Write a function to use a 'person' object containing
+   their details as 5 key/value pairs
 
-  @param { personObj } an array containing the names of a number of animals
+  @param { personObj } an array containing the names
+   of a number of animals
   @returns { string } in the format...
-    "Hi, my name is {firstName} {lastName}. I am {age} years old and work as a {occupation} in {location}."
+    "Hi, my name is {firstName} {lastName}. I am {age}
+     years old and work as a {occupation} in {location}."
 */
 
 // function question7( personObj ) {
@@ -134,9 +177,13 @@ function question1(name1) {
 /**
   +++++++++++++++++++++++++++++++++++++++++++
   Question 8:
-  Write a function to concatenate two arrays, then add an additional item to the resulting array. The two input arrays must not be modified.
+  Write a function to concatenate two arrays, 
+  then add an additional item to the resulting array.
+   The two input arrays must not be modified.
 
-  @param { arr1, arr2, strExtra } two arrays, each containing 3 items, and a string value as the additional item
+  @param { arr1, arr2, strExtra } two arrays,
+   each containing 3 items, and a string value as 
+   the additional item
   @returns { newArr } containing 7 items
 */
 
@@ -148,12 +195,15 @@ function question1(name1) {
 /**
   +++++++++++++++++++++++++++++++++++++++++++
   Question 9:
-  Write a function that takes a retail price and returns that price with VAT 
+  Write a function that takes a retail price and returns
+   that price with VAT 
 
   @param { retailPrice, taxAmount } two 
-  - retailPrice: string containing the currency and an integer, float, either negative or positive
+  - retailPrice: string containing the currency and an integer,
+   float, either negative or positive
   - taxAmount: a integer or float representing the tax amount
-  @returns { totalPrice } a string containing the currency sign too
+  @returns { totalPrice } a string containing the currency 
+  sign too
 */
 
 // function question9( retailPrice ) {
@@ -193,9 +243,9 @@ function question1(name1) {
 
 module.exports = {
   question1,
-  // question2,
-  // question3,
-  // question4,
+  question2,
+  question3,
+   question4,
   // question5,
   // question6,
   // question7,
