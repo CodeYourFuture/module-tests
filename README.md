@@ -13,13 +13,18 @@ We suggest you to only use the Javascript documentation from [MDN](https://devel
 
 1. Please UNCOMMENT each function, and its associated name in the module.exports object at the bottom of the file, as you reach them.
 2. Also, change the `module1.test.js` file from...
-  ```
-    xit("Q? - Description", function() { ...
-  ```
-  to
-  ```
-    it("Q? - Description", function() { ...
-  ```
+
+
+```
+  xit("Q? - Description", function() { ...
+```
+
+to
+
+```
+  it("Q? - Description", function() { ...
+```
+
 3. Make sure you use git to push your code to GitHub when you have successfully tested your solution to each question.
 4. When you have completed the questions, make a pull request back to the CYF repository.
 
@@ -60,4 +65,4 @@ npm test -- --watch
 
 Don't forget to commit your code often. Once it's ready, create a pull request with your solution.
 
-Commits done after the time is up won't be considered.
+Commits done after the time is up won't be considered...
