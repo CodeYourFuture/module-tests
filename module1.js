@@ -54,14 +54,16 @@ function question2(number1, number2) {
   Is the number even or odd?
   @param {number} number1 a regular integer
   @returns {string} odd or even
-*/
-
+ */
 function question3(number1) {
-  if (number1) {
-    return;
-  }
-}
-
+//for (var i=0; i<=number1.length;i++){
+  if (number1 %2===0){
+    return "even";
+  }else{
+    return "odd";
+  };
+    
+  };
 
 /**
   +++++++++++++++++++++++++++++++++++++++++++
@@ -72,7 +74,15 @@ function question3(number1) {
   @returns [array 0 ... 100] 
 */
 
-// function question4() {
+function question4() {
+var newarr=[]
+for (i=0;i<=100;i++){
+  if (i%2===0){
+    newarr.push(i);
+  }else{continue}
+};
+return newarr;
+};
 //   // TODO
 //   for ( /* ??? */ ) {
 //     // TODO
@@ -90,13 +100,13 @@ function question3(number1) {
   @returns the product of num1 and num2 
 */
 
-// function question5(num1, num2) {
-//   // TODO
+function question5(num1, num2) {
 
-//   return /* ??? */;
-// }
+  var multip=(parseFloat(num1*num2).toFixed(2));
 
+  return multip ;
 
+}
 /**
   +++++++++++++++++++++++++++++++++++++++++++
   Question 6:
@@ -107,11 +117,13 @@ function question3(number1) {
     "The array contains { number of animals } animals. These are: {animal1} and {animal2} and {animal3}."
 */
 
-// function question6( animArr ) {
-//   // TODO
+function question6( animArr ) {
+ var animls= (animArr.length);
 
-//   return /* ??? */;
-// }
+  return "The array contains" +(animArr.length)+" animals. These are:"+animArr[0] and "+animArr[1] and "+animArr[2]."
+  ;
+  
+}
 
 
 /**
@@ -124,10 +136,10 @@ function question3(number1) {
     "Hi, my name is {firstName} {lastName}. I am {age} years old and work as a {occupation} in {location}."
 */
 
-// function question7( personObj ) {
-//   // TODO
-//   return /* ??? */;
-// }
+function question7( personObj ) {
+  
+  return /* ??? */;
+}
 
 
 /**
@@ -139,10 +151,10 @@ function question3(number1) {
   @returns { newArr } containing 7 items
 */
 
-// function question8( arr1, arr2, strExtra ) {
-//   // TODO
-//   return /* ??? */;
-// }
+function question8( arr1, arr2, strExtra ) {
+ var total= arr1.concat(arr2,strExtra);
+  return total;
+}
 
 /**
   +++++++++++++++++++++++++++++++++++++++++++
@@ -190,15 +202,17 @@ function question3(number1) {
 //   }
 // }
 
+
+
 module.exports = {
   question1,
   question2,
-  // question3,
-  // question4,
-  // question5,
-  // question6,
-  // question7,
-  // question8, 
-  // question9,
-  // question10
+  question3,
+question4,
+question5,
+question6,
+// question7,
+question8, 
+// question9,
+// question10,
 };
