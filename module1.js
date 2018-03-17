@@ -192,23 +192,26 @@ function question9( retailPrice, taxAmount ) {
   @returns { totalPrice } a string containing the currency sign too
 */
 
-// function question10( retailPrice ) {
-//   // TODO
-//   return function extractDigits (retailPrice) {
-//     // find the retail value as an integer, float
-//     const retailValue = /* ??? */;
+function question10( retailPrice ) {
+  // TODO 
 
-//     return function addTax (retailValue, taxAmount) {
-//       // make the tax calculations
-//       const retailValueWithTax = /* ??? */;
+  return function extractDigits (retailPrice) {
+    // find the retail value as an integer, float
+    var taxAmount = (20 * retailValue)/100
 
-//       return function addCurrency ( retailValueWithTax, currency) {
-//         // return final result as a string
-//         return /* ??? */;
-//       }
-//     }
-//   }
-// }
+    return function addTax (retailValue, taxAmount) {
+      // make the tax calculations
+      const retailValueWithTax = retailValue + taxAmount;
+      const currency = "£"
+      return function addCurrency ( retailValueWithTax, currency) {
+        // return final result as a string
+         
+        const final = retailValueWithTax + currency
+        return fainal;
+      }
+    }
+  }
+}
 
 module.exports = {
   question1,
@@ -220,5 +223,5 @@ module.exports = {
   question7,
   question8, 
   question9,
-  // question10
+  question10
 };
