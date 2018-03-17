@@ -127,11 +127,16 @@ function question3(number1) {
   @returns the product of num1 and num2 
 */
 
-// function question5(num1, num2) {
-//   // TODO
+function question5(num1, num2) {
+  // TODO
+  product = Math.round( num1*num2 )/num2
+  // parseFloat(Number(num1*num2).toPrecision(2));
+  
+return product;
 
-//   return /* ??? */;
-// }
+}
+  
+
 
 
 /**
@@ -168,10 +173,20 @@ function question3(number1) {
      years old and work as a {occupation} in {location}."
 */
 
-// function question7( personObj ) {
-//   // TODO
-//   return /* ??? */;
-// }
+function question7( personObj ) {
+   for ( let i=0; i<=personObj.length ;i++)
+  
+  // TODO
+  var pers=("Hi my name is"+"--"+ personObj.firstName +'--' 
+  +personObj.lastName+'--'+ personObj.age+'--' + 
+  personObj.occupation +'--' 
+ + personObj.location); 
+ return pers;
+}
+// console.log("Hi my name is"+"--"+ personObj.firstName +'--' 
+// +personObj.lastName+'--'+ personObj.age+'--' + 
+// personObj.occupation +'--' 
+// + personObj.location); 
 
 
 /**
@@ -187,10 +202,11 @@ function question3(number1) {
   @returns { newArr } containing 7 items
 */
 
-// function question8( arr1, arr2, strExtra ) {
-//   // TODO
-//   return /* ??? */;
-// }
+ function question8( arr1, arr2, strExtra ) {
+ let concaArr= arr1.concat(arr2, strExtra)
+// //   // TODO
+   return concaArr;
+ }
 
 /**
   +++++++++++++++++++++++++++++++++++++++++++
@@ -246,10 +262,10 @@ module.exports = {
   question2,
   question3,
    question4,
-  // question5,
+   question5,
   // question6,
-  // question7,
-  // question8, 
+   question7,
+   question8, 
   // question9,
   // question10
 };
