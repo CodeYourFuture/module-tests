@@ -87,7 +87,7 @@ function question2(number1, number2) {
 //   console.log(isEven(2019));
 /**
   // +++++++++++++++++++++++++++++++++++++++++
-/*
+/** 
   Question 4:
   Write a for loop that loops over the numbers 
   from 0 to 100, returning an array containing 
@@ -97,23 +97,33 @@ function question2(number1, number2) {
 //   @returns [array 0 ... 100] 
 // */
 // // +++++++++++++++++++++++++++++++++++++++++
-// function question4() {
-//   let i=0;
-//   console.log(i)
-//   // TODO
-//   for (i=0; i<100; i++ ){
-//     console.log(i);
-//     // TODO
-//   }
-//   return i;
-// }
-//  question4();
+function question4() {
+var everySecond=[];
+for ( i=0; i<=100; i++ ){
+  if ( i%2 === 0 ){
+ everySecond.push(i)}
+
+  }
+  return  everySecond;
+  };
+
 
 /**
   +++++++++++++++++++++++++++++++++++++++++++
   Question 5:
-?
-/*
+
+//   Write a function to use a 'person' object containing their details
+//    as 5 key/value pairs
+
+//   @param { personObj } an array containing 
+//   the names of a number of animals
+//   @returns { string } in the format...
+//     "Hi, my name is {firstName} {lastName}. 
+//     I am {age} years old and work as a {occupation} in {location}."
+// */
+
+
+/** 
   +++++++++++++++++++++++++++++++++++++++++++
   Question 6:
   Write a function called multiply 
@@ -127,11 +137,11 @@ function question2(number1, number2) {
 // //     animals. These are: {animal1} and {animal2} and {animal3}."
 // // */
 
-// function multiply ( a,b ) {
-//   // TODO
+function multiply ( a,b ) {
+  // TODO
 
-//   return a*b;
-// }
+  return a*b;
+}
 
 
 /**
@@ -146,7 +156,22 @@ function question2(number1, number2) {
 //     "Hi, my name is {firstName} {lastName}. 
 //     I am {age} years old and work as a {occupation} in {location}."
 // */
+const person = {
+  firstName: 'Sara',
+  lastName: 'Marshall',
+  age: 25,
+  occupation: 'dentist',
+  location: 'Warrington'
+}
 
+function question7( personObj ) {
+  for( let i=0; i<= personObj.length; i++)
+ console.log ("Hi, my name is" +  personObj.firstName +  personObj.lastName +
+    "I am" +   personObj.age + "years old and work as a" +   personObj.occupation + "in" +  person.location)
+// TODO
+return  "Hi, my name is " +  personObj.firstName  +  " "  +  personObj.lastName +
+". I am " +   personObj.age + " years old and work as a " +   personObj.occupation + " in " +  person.location + "."
+};
 // function question7( personObj ) {
 //   // TODO
 //   return /* ??? */;
@@ -165,35 +190,37 @@ function question2(number1, number2) {
 //   @param { arr1, arr2, strExtra } two arrays, each containing 
 //   3 items, and a string value as the additional item
 //   @returns { newArr } containing 7 items
-// */
-
+// 
+*/
 // const array1 = ["lions", "tigers", "bears"];
 // const array2 = ["penguins", "flamingoes", "eagles"];
 // const extra  = "cobras";
 
-// function question8( arr1, arr2, strExtra ) {
-//  console.log(array1.concat(array2, extra)); 
-//     // TODO
-//   return /* ??? */;
-// }
-
+  function question8( arr1, arr2, strExtra ) {
+    let allarray=arr1.concat(arr2, strExtra)
+  return allarray;
+  //     TODO
+    };
+// console.log(allarray); 
 /**
   +++++++++++++++++++++++++++++++++++++++++++
-  Question 9:
-  Write a function that takes a retail price and returns that price with VAT 
+//   Question 9:
+//   Write a function that takes a retail price and returns that price with VAT 
 
-  @param { retailPrice, taxAmount } two 
-  - retailPrice: string containing the currency and an integer, float, either negative or positive
-  - taxAmount: a integer or float representing the tax amount
-  @returns { totalPrice } a string containing the currency sign too
-*/
-
-// function question9( retailPrice ) {
-//   // TODO
-  
-//   return /* ??? */;
-// }
-
+//   @param { retailPrice, taxAmount } two 
+//   - retailPrice: string containing the currency and an integer, float, either negative or positive
+//   - taxAmount: a integer or float representing the tax amount
+//   @returns { totalPrice } a string containing the currency sign too
+// */
+// let retailPrice=10;
+// let taxAmount=0.2;
+// let stringToRemove="£10"
+function question9 (retailPrice, taxAmount) {
+ // TODO
+return ( "£" + (parseInt(retailPrice.slice(1) * 0.2) +  
+  (parseInt(retailPrice.slice(1)))));
+};
+// console.log(   question9 (stringToRemove, 0.2));
 /**
   +++++++++++++++++++++++++++++++++++++++++++
   Question 10:
@@ -213,7 +240,7 @@ function question2(number1, number2) {
 
 //     return function addTax (retailValue, taxAmount) {
 //       // make the tax calculations
-//       const retailValueWithTax = /* ??? */;
+//       const retailValueWithTax =  retailPrice*0.2 +  retailPrice;
 
 //       return function addCurrency ( retailValueWithTax, currency) {
 //         // return final result as a string
@@ -222,16 +249,17 @@ function question2(number1, number2) {
 //     }
 //   }
 // }
-// 
+// console.log( question10( retailPrice ));
+
 module.exports = {
   question1,
   question2,
   question3,
-  // question4,
+  question4,
   // question5,
   // question6,
-  // question7,
-  // question8, 
-  // question9,
+  question7,
+  question8, 
+  question9
   // question10
   };
