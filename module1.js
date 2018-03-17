@@ -67,11 +67,16 @@ function question2(number1, number2) {
 */
 
 function question3(number1) {
-  if (number1) {
-    return a % 2 == 0 ? "even" : "odd" ;
+  if (number1 %2 == 0){
+return ('even')
   }
-  return number1
-}
+  else{
+    return ('odd')
+  }
+    //return number1 % 2 == 0 ?  "even" : "odd" ;
+  }
+
+ 
 
 
 /*
@@ -101,9 +106,10 @@ function question3(number1) {
   @returns the product of num1 and num2 
 */
 
-function multiplyTwoNumbers(num1, num2) {
-var mul = (num1 * num2)
-  // TODO
+function question5(num1, num2) {
+var mul = math.round(num1 * num2)
+
+
  
   return mul;
 }
@@ -205,9 +211,9 @@ var mul = (num1 * num2)
 module.exports = {
   question1,
   question2,
-  // question3,
+  question3,
   // question4,
-  // question5,
+   question5,
   // question6,
   // question7,
   // question8, 
