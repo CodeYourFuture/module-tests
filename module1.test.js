@@ -102,7 +102,7 @@ describe("Answers", function() {
     expect(solution).toEqual("£12")
   })
 
-  it("Q10 - Tax addition part2", function() {
+  xit("Q10 - Tax addition part2", function() {
     const tax = 0.2;
     const retailPrice = "£15"
     solution = exercises.question10(retailPrice);

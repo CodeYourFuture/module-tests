@@ -7,6 +7,8 @@
 */
 
 /**
+
+	hi
   Question 1
   Comparing a string with ‘Code Your Future’, return true if they are the same or
   false otherwise
@@ -192,26 +194,26 @@ function question9( retailPrice, taxAmount ) {
   @returns { totalPrice } a string containing the currency sign too
 */
 
-function question10( retailPrice ) {
-  // TODO 
+// function question10( retailPrice ) {
+//   // TODO 
 
-  return function extractDigits (retailPrice) {
-    // find the retail value as an integer, float
-    var taxAmount = (20 * retailValue)/100
+//   return function extractDigits (retailPrice) {
+//     // find the retail value as an integer, float
+//     var taxAmount = (20 * retailValue)/100
 
-    return function addTax (retailValue, taxAmount) {
-      // make the tax calculations
-      const retailValueWithTax = retailValue + taxAmount;
-      const currency = "£"
-      return function addCurrency ( retailValueWithTax, currency) {
-        // return final result as a string
+//     return function addTax (retailValue, taxAmount) {
+//       // make the tax calculations
+//       const retailValueWithTax = retailValue + taxAmount;
+//       const currency = "£"
+//       return function addCurrency ( retailValueWithTax, currency) {
+//         // return final result as a string
          
-        const final = retailValueWithTax + currency
-        return fainal;
-      }
-    }
-  }
-}
+//         const final = retailValueWithTax + currency
+//         return fainal;
+//       }
+//     }
+//   }
+// }
 
 module.exports = {
   question1,
@@ -223,5 +225,5 @@ module.exports = {
   question7,
   question8, 
   question9,
-  question10
+  // question10
 };
