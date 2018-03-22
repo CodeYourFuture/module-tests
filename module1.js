@@ -5,7 +5,6 @@
 
   Please UNCOMMENT each function, and its associated name in the module.exports object at the bottom of the file, as you reach them.
 */
-
 /**
   Question 1
   Comparing a string with ‘Code Your Future’,
@@ -17,23 +16,17 @@
   @returns {boolean} true or false
 */
 
-
 function question1(name1) {
-
-  // let string="Code Your Future";
+// let string="Code Your Future";
   if (name1 === "Code Your Future") {
-   
-    // TODO:
+   // TODO:
     return true;
   }
   else {
     return false;
   }
 };
-
 // console.log(question1());
-
-
 /**
   +++++++++++++++++++++++++++++++++++++++++++
   Question 2:
@@ -72,8 +65,6 @@ function question2(number1, number2) {
   return 'odd';
   } 
 };
-  
-
 //  function(number1) {
 //   if( (number1 % 3) === 0 ) {
 //   return true;
@@ -111,24 +102,24 @@ for ( i=0; i<=100; i++ ){
 /**
   +++++++++++++++++++++++++++++++++++++++++++
   Question 5:
+  Write a function called multiply that multiplies two numbers together. 
+  It should take two numbers as parameters and return the answer.
+  @param { num1, num2 } two mumbers; integer, float, either negative or positive
+  @returns the product of num1 and num2 
+*/
 
-//   Write a function to use a 'person' object containing their details
-//    as 5 key/value pairs
+function question5(num1, num2) {
+  // TODO
 
-//   @param { personObj } an array containing 
-//   the names of a number of animals
-//   @returns { string } in the format...
-//     "Hi, my name is {firstName} {lastName}. 
-//     I am {age} years old and work as a {occupation} in {location}."
-// */
-
-
-/** 
+  return Math.round(num1*num2*100)/100;
+};
+/**
   +++++++++++++++++++++++++++++++++++++++++++
   Question 6:
-  Write a function called multiply 
-  that multiplies two numbers together. 
-  It should take two numbers as parameters and return the answer.
+
+  Write a function that takes an array as a parameter, 
+  establishes how many items it contains, and then writes
+   out the names of the animals into a string.
 
 // //   @param { animArr } an array containing the 
 // //   names of a number of animals
@@ -136,14 +127,14 @@ for ( i=0; i<=100; i++ ){
 // //     "The array contains { number of animals } 
 // //     animals. These are: {animal1} and {animal2} and {animal3}."
 // // */
-
-function multiply ( a,b ) {
+const animals = ['lions', 'tigers', 'bears'];
+function question6 (animArr) {
   // TODO
-
-  return a*b;
+for(let i=0; i<=animals.length; i++){
+  return "The array contains " + animArr.length + 
+      " animals. " + "These are: " + animArr[0] + " and " + animArr[1] +  " and " + animArr[2] + "."
 }
-
-
+};
 /**
   +++++++++++++++++++++++++++++++++++++++++++
   Question 7:
@@ -172,14 +163,6 @@ function question7( personObj ) {
 return  "Hi, my name is " +  personObj.firstName  +  " "  +  personObj.lastName +
 ". I am " +   personObj.age + " years old and work as a " +   personObj.occupation + " in " +  person.location + "."
 };
-// function question7( personObj ) {
-//   // TODO
-//   return /* ??? */;
-// }
-
-// console.log(question7( personObj ));
-
-
 /**
   +++++++++++++++++++++++++++++++++++++++++++
   Question 8:
@@ -256,10 +239,10 @@ module.exports = {
   question2,
   question3,
   question4,
-  // question5,
-  // question6,
+  question5,
+  question6,
   question7,
   question8, 
-  question9
+  question9,
   // question10
   };
