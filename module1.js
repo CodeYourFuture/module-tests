@@ -16,13 +16,10 @@
   @returns {boolean} true or false
 */
 
-function question1(name1) {
-  if (name1) {
-    // TODO:
-    return;
-  }
-}
-
+// function question1(name1) {
+//   return name1 === "Code Your Future";
+// }
+const question1 = name1 => name1 === "Code Your Future"; //es6
 
 /**
   +++++++++++++++++++++++++++++++++++++++++++
@@ -35,15 +32,9 @@ function question1(name1) {
 */
 
 // function question2(number1, number2) {
-//   if (number1) {
-//     // TODO:
-//     return;
-//   } else {
-//     // TODO:
-//     return;
-//   }
+//   return number1 === number2;
 // }
-
+const question2 = (number1, number2) => number1 === number2; //es6
 
 /**
   +++++++++++++++++++++++++++++++++++++++++++
@@ -54,30 +45,49 @@ function question1(name1) {
 */
 
 // function question3(number1) {
-//   if (number1) {
-//     return;
+//   if (number1 % 2 === 0) {
+//     return "even";
+//   }
+//   else {
+//     return "odd";
 //   }
 // }
+const question3 = number1 => number1 % 2 === 0 ? "even" : "odd"; //es6
+
 
 
 /**
   +++++++++++++++++++++++++++++++++++++++++++
   Question 4:
   Write a for loop that loops over the numbers from 0 to 100, returning an array containing only every second number. So it should return [ 0, 2, 4, 6, 8, 10 .... etc.]
-
+ 
   @param none
   @returns [array 0 ... 100] 
 */
 
+
 // function question4() {
-//   // TODO
-//   for ( /* ??? */ ) {
-//     // TODO
+//   arr = []
+//   for (let i = 0; i < 101; i++) {
+//     arr.push(i);
 //   }
-//   return /* ??? */;
+//   newArr = [];
+//   arr.forEach(function (item) {
+//     if (item % 2 === 0)
+//       newArr.push(item);
+//   })
+//   return newArr;
 // }
 
+// const question4=()=>for (var i = 0; i < 100; i+=2) //how to write for loop with arrow function???
 
+//refactored version
+function question4() {
+  let arr = [];
+  for (let i = 0; i <= 100; i += 2)
+    arr.push(i);
+  return arr;
+}
 /**
   +++++++++++++++++++++++++++++++++++++++++++
   Question 5:
@@ -88,12 +98,9 @@ function question1(name1) {
 */
 
 // function question5(num1, num2) {
-//   // TODO
-
-//   return /* ??? */;
+//   return (( num1 * num2 ) * 100) / 100;
 // }
-
-
+const question5 = (num1, num2) => ((num1 * num2) * 100) / 100 //es6
 /**
   +++++++++++++++++++++++++++++++++++++++++++
   Question 6:
@@ -104,13 +111,11 @@ function question1(name1) {
     "The array contains { number of animals } animals. These are: {animal1} and {animal2} and {animal3}."
 */
 
-// function question6( animArr ) {
-//   // TODO
-
-//   return /* ??? */;
+// function question6(animArr) {
+//   return "The array contains " + animArr.length + " animals. These are: " + animArr.join(' and ') + "."
 // }
-
-
+const question6 = animArr => `The array contains ${animArr.length} animals. These are: ${animArr.join(' and ')}.` //es6
+ //have to think about how to use spread operator here arr=[a,b] can be [...arr] = a b in es6
 /**
   +++++++++++++++++++++++++++++++++++++++++++
   Question 7:
@@ -120,12 +125,8 @@ function question1(name1) {
   @returns { string } in the format...
     "Hi, my name is {firstName} {lastName}. I am {age} years old and work as a {occupation} in {location}."
 */
-
-// function question7( personObj ) {
-//   // TODO
-//   return /* ??? */;
-// }
-
+//refactored es6 version
+const question7 = obj => `Hi, my name is ${obj.firstName} ${obj.lastName}. I am ${obj.age} years old and work as a ${obj.occupation} in ${obj.location}.`
 
 /**
   +++++++++++++++++++++++++++++++++++++++++++
@@ -136,11 +137,14 @@ function question1(name1) {
   @returns { newArr } containing 7 items
 */
 
-// function question8( arr1, arr2, strExtra ) {
-//   // TODO
-//   return /* ??? */;
+// function question8(arr1, arr2, strExtra) {
+//   let arr=arr1.concat(arr2); //concat two arrays in es6 can be like [...arr1,...arr2] 
+//   arr.push(strExtra);
+//   return arr
 // }
 
+//refactored to es6
+const question8 = (arr1, arr2, strExtra) => [...arr1, ...arr2, strExtra]
 /**
   +++++++++++++++++++++++++++++++++++++++++++
   Question 9:
@@ -152,11 +156,12 @@ function question1(name1) {
   @returns { totalPrice } a string containing the currency sign too
 */
 
-// function question9( retailPrice ) {
-//   // TODO
-  
-//   return /* ??? */;
-// }
+function question9(retailPrice, taxAmount) {
+  let rpStringToNumber = parseFloat(retailPrice.replace(/[^0-9-.]/g, ''))
+  let res = (taxAmount + 1) * rpStringToNumber;
+  return `£${res}`
+}
+//how to ceovert it to es6???
 
 /**
   +++++++++++++++++++++++++++++++++++++++++++
@@ -189,13 +194,13 @@ function question1(name1) {
 
 module.exports = {
   question1,
-  // question2,
-  // question3,
-  // question4,
-  // question5,
-  // question6,
-  // question7,
-  // question8, 
-  // question9,
+  question2,
+  question3,
+  question4,
+  question5,
+  question6,
+  question7,
+  question8,
+  question9
   // question10
 };
