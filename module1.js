@@ -155,7 +155,6 @@ function question8( arr1, arr2, strExtra ) {
  var total= arr1.concat(arr2,strExtra);
   return total;
 }
-
 /**
   +++++++++++++++++++++++++++++++++++++++++++
   Question 9:
@@ -166,14 +165,14 @@ function question8( arr1, arr2, strExtra ) {
   - taxAmount: a integer or float representing the tax amount
   @returns { totalPrice } a string containing the currency sign too
 */
-// let retailPrice=10;
-// let taxAmount=0.2;
-// let stringToRemove="£10"
-//  function question9( retailPrice ,taxAmount) {
-//    // TODO
-//    return ("£" +(parseInt(retailPrice.slice(1)*0.2)+(parseInt(retailPrice.slice(1)))))
-//  }
-// console.log(question9(10,0.2));
+let retailPrice=10;
+let taxAmount=0.2;
+let stringToRemove="£10"
+ function question9( retailPrice,taxAmount) {
+   // TODO
+   return ("£" +(parseInt(retailPrice.slice(1)*0.2)+(parseInt(retailPrice.slice(1)))))
+ }
+console.log(retailPrice,0.2);
  
 //  /**
 //   +++++++++++++++++++++++++++++++++++++++++++
@@ -213,8 +212,8 @@ module.exports = {
   question4,
   question5,
   question6,
-question7,
+  question7,
   question8, 
-// question9,
+  question9,
 // question10,
 };
