@@ -26,7 +26,6 @@ function question1(name1) {
   }
 }
 
-
 /**
   +++++++++++++++++++++++++++++++++++++++++++
   Question 2:
@@ -102,12 +101,10 @@ return newarr;
 
 function question5(num1, num2) {
 
-  var multip=(parseFloat(num1*num2).toFixed(2));
+  // return (( num1 * num2 ) * 100) / 100;
 
-  return multip ;
-
-}
-/**
+return (( num1 * num2 ) * 100) / 100;
+}/**
   +++++++++++++++++++++++++++++++++++++++++++
   Question 6:
   Write a function that takes an array as a parameter, establishes how many items it contains, and then writes out the names of the animals into a string.
@@ -120,27 +117,30 @@ function question5(num1, num2) {
 function question6( animArr ) {
  var animls= (animArr.length);
 
-  return "The array contains" +(animArr.length)+" animals. These are:"+animArr[0] and "+animArr[1] and "+animArr[2]."
-  ;
-  
+ console.log(animArr.length)
+
+ return "The array contains " + ( animArr.length ) + " animals. These are: " + animArr[0] + " and " + animArr[1] + " and " + animArr[2] + ".";
 }
 
 
 /**
   +++++++++++++++++++++++++++++++++++++++++++
   Question 7:
-  Write a function to use a 'person' object containing their details as 5 key/value pairs
-
-  @param { personObj } an array containing the names of a number of animals
-  @returns { string } in the format...
+  Write a function to use a 'person' object containing their details as 5 key/value pair
+@param { personObj } an array containing the names of a number of animals
+ 
+@returns { string } in the format...
     "Hi, my name is {firstName} {lastName}. I am {age} years old and work as a {occupation} in {location}."
 */
 
 function question7( personObj ) {
-  
-  return /* ??? */;
-}
+//   var person = {firstName:lion , lastName:"Doe", age:46 , occupation: manger , location: lverpool};
 
+  
+// // 
+  return "Hi, my name is "+ personObj.firstName +  " "+ personObj.lastName + ". I am "+ personObj.age +" years old and work as a " + personObj.occupation + " in "+personObj.location+"."
+  // 
+}
 
 /**
   +++++++++++++++++++++++++++++++++++++++++++
@@ -166,23 +166,25 @@ function question8( arr1, arr2, strExtra ) {
   - taxAmount: a integer or float representing the tax amount
   @returns { totalPrice } a string containing the currency sign too
 */
+// let retailPrice=10;
+// let taxAmount=0.2;
+// let stringToRemove="£10"
+//  function question9( retailPrice ,taxAmount) {
+//    // TODO
+//    return ("£" +(parseInt(retailPrice.slice(1)*0.2)+(parseInt(retailPrice.slice(1)))))
+//  }
+// console.log(question9(10,0.2));
+ 
+//  /**
+//   +++++++++++++++++++++++++++++++++++++++++++
+//   Question 10:
+//   Write a high order function that takes a retail price and returns that price with VAT
 
-// function question9( retailPrice ) {
-//   // TODO
-  
-//   return /* ??? */;
-// }
-
-/**
-  +++++++++++++++++++++++++++++++++++++++++++
-  Question 10:
-  Write a high order function that takes a retail price and returns that price with VAT
-
-  @param { retailPrice } two 
-  - retailPrice: string containing the currency and an integer, float, either negative or positive
-  - taxAmount: a integer or float representing the tax amount
-  @returns { totalPrice } a string containing the currency sign too
-*/
+//   @param { retailPrice } two 
+//   - retailPrice: string containing the currency and an integer, float, either negative or positive
+//   - taxAmount: a integer or float representing the tax amount
+//   @returns { totalPrice } a string containing the currency sign too
+// */
 
 // function question10( retailPrice ) {
 //   // TODO
@@ -208,11 +210,11 @@ module.exports = {
   question1,
   question2,
   question3,
-question4,
-question5,
-question6,
-// question7,
-question8, 
+  question4,
+  question5,
+  question6,
+question7,
+  question8, 
 // question9,
 // question10,
 };
