@@ -9,6 +9,20 @@ Please do complete the questions on your own and do not slack/chat with your col
 You may not use Google or StackOverFlow to find solutions and always try to do it yourself first
 We suggest you to only use the Javascript documentation from [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide).
 
+## Instructions
+
+1. Please UNCOMMENT each function, and its associated name in the module.exports object at the bottom of the file, as you reach them.
+2. Also, change the `module1.test.js` file from...
+  ```
+    xit("Q? - Description", function() { ...
+  ```
+  to
+  ```
+    it("Q? - Description", function() { ...
+  ```
+3. Make sure you use git to push your code to GitHub when you have successfully tested your solution to each question.
+4. When you have completed the questions, make a pull request back to the CYF repository.
+
 ## Goals
 
 * Read carefully all the code, all comments as well as the unit tests to understand what the code is supposed to do
@@ -22,7 +36,9 @@ Fork and clone this repository to your computer and install the packages with `n
 
 ```sh
 git clone https://github.com/codeyourfuture/module-tests.git
+
 cd module-tests
+
 npm install
 ```
 

@@ -129,22 +129,32 @@ function question3(number1) {
 
 function question5(num1, num2) {
   // TODO
-  product = Math.round( num1*num2 )/num2
-  // parseFloat(Number(num1*num2).toPrecision(2));
+  //  product = Math.round( num1*num2 )/num2
+  //  parseFloat(Number(num1*num2).toPrecision(2));
   
-return product;
+
+
+  // function precisionRound(number, precision) 
+  // var factor = Math.pow(10, precision);
+  return Math.round(num1*num2 * 100) / 100;
 
 }
-  
+// console.log(precisionRound(1234.5678, 1));
+// expected output: 1234.6
+
+// console.log(precisionRound(1234.5678, -1));
+// expected output: 1230
+
 
 
 
 /**
   +++++++++++++++++++++++++++++++++++++++++++
   Question 6:
-  Write a function called multiply that multiplies 
-  two numbers together. It should take two numbers 
-  as parameters and return the answer.
+
+  Write a function that takes an array as a parameter, 
+  establishes how many items it contains,
+   and then writes out the names of the animals into a string.
 
   @param { animArr } an array containing the names of
    a number of animals
@@ -177,11 +187,11 @@ function question7( personObj ) {
    for ( let i=0; i<=personObj.length ;i++)
   
   // TODO
-  var pers=("Hi my name is"+"--"+ personObj.firstName +'--' 
+return persName("Hi my name is"+"--"+ personObj.firstName +'--' 
   +personObj.lastName+'--'+ personObj.age+'--' + 
   personObj.occupation +'--' 
  + personObj.location); 
- return pers;
+ 
 }
 // console.log("Hi my name is"+"--"+ personObj.firstName +'--' 
 // +personObj.lastName+'--'+ personObj.age+'--' + 
