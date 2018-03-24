@@ -11,7 +11,7 @@ describe("Answers", function() {
     expect(solution).toEqual(false);
   });
 
-  xit("Q2 - IF/ELSE: Check if two numbers are the same", function() {
+  it("Q2 - IF/ELSE: Check if two numbers are the same", function() {
     let number1 = 1;
     let number2 = 2;
     solution = exercises.question2(number1, number2);
@@ -23,7 +23,7 @@ describe("Answers", function() {
     expect(solution).toEqual(true);
   });
 
-  xit("Q3 - Is the number odd or even?", function() {
+  it("Q3 - Is the number odd or even?", function() {
     solution = exercises.question3(3);
     expect(solution).toEqual("odd");
     solution = exercises.question3(14);
@@ -41,7 +41,7 @@ describe("Answers", function() {
     expect(solution).toEqual(arr);
   });
 
-  xit("Q5 - Multiply two numbers", function() {
+  it("Q5 - Multiply two numbers", function() {
     let number1 = 6;
     let number2 = 23;
     solution = exercises.question5(number1, number2);

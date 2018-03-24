@@ -6,7 +6,7 @@
   Please UNCOMMENT each function, and its associated name in the module.exports object at the bottom of the file, as you reach them.
 */
 
-/**
+/*
   Question 1
   Comparing a string with ‘Code Your Future’, return true if they are the same or
   false otherwise
@@ -17,14 +17,26 @@
 */
 
 function question1(name1) {
-  if (name1) {
-    // TODO:
-    return;
-  }
+  let flag = false;
+  if (name1 ==='Code Your Future'){
+
+    flag = true;
+    
+  } 
+  return flag;
 }
 
+// if () {} else {}
 
-/**
+// if () {}
+
+// if () {}
+// else if () {}
+// else {}
+
+
+
+/*
   +++++++++++++++++++++++++++++++++++++++++++
   Question 2:
   IF / ELSE Statements:
@@ -34,18 +46,19 @@ function question1(name1) {
   @returns {boolean} true or false
 */
 
-// function question2(number1, number2) {
-//   if (number1) {
-//     // TODO:
-//     return;
-//   } else {
-//     // TODO:
-//     return;
-//   }
-// }
+function question2(number1, number2) {
+  if (number1 === number2) {
+  
+    // TODO:
+    return true;
+  } else {
+    // TODO:
+    return false;
+  }
+}
 
 
-/**
+/*
   +++++++++++++++++++++++++++++++++++++++++++
   Question 3:
   Is the number even or odd?
@@ -53,14 +66,20 @@ function question1(name1) {
   @returns {string} odd or even
 */
 
-// function question3(number1) {
-//   if (number1) {
-//     return;
-//   }
-// }
+function question3(number1) {
+  if (number1 %2 == 0){
+return ('even')
+  }
+  else{
+    return ('odd')
+  }
+    //return number1 % 2 == 0 ?  "even" : "odd" ;
+  }
+
+ 
 
 
-/**
+/*
   +++++++++++++++++++++++++++++++++++++++++++
   Question 4:
   Write a for loop that loops over the numbers from 0 to 100, returning an array containing only every second number. So it should return [ 0, 2, 4, 6, 8, 10 .... etc.]
@@ -78,7 +97,7 @@ function question1(name1) {
 // }
 
 
-/**
+/*
   +++++++++++++++++++++++++++++++++++++++++++
   Question 5:
   Write a function called multiply that multiplies two numbers together. It should take two numbers as parameters and return the answer.
@@ -87,14 +106,16 @@ function question1(name1) {
   @returns the product of num1 and num2 
 */
 
-// function question5(num1, num2) {
-//   // TODO
-
-//   return /* ??? */;
-// }
+function question5(num1, num2) {
+var mul = math.round(num1 * num2)
 
 
-/**
+ 
+  return mul;
+}
+
+
+/*
   +++++++++++++++++++++++++++++++++++++++++++
   Question 6:
   Write a function that takes an array as a parameter, establishes how many items it contains, and then writes out the names of the animals into a string.
@@ -111,7 +132,7 @@ function question1(name1) {
 // }
 
 
-/**
+/*
   +++++++++++++++++++++++++++++++++++++++++++
   Question 7:
   Write a function to use a 'person' object containing their details as 5 key/value pairs
@@ -127,7 +148,7 @@ function question1(name1) {
 // }
 
 
-/**
+/*
   +++++++++++++++++++++++++++++++++++++++++++
   Question 8:
   Write a function to concatenate two arrays, then add an additional item to the resulting array. The two input arrays must not be modified.
@@ -141,7 +162,7 @@ function question1(name1) {
 //   return /* ??? */;
 // }
 
-/**
+/*
   +++++++++++++++++++++++++++++++++++++++++++
   Question 9:
   Write a function that takes a retail price and returns that price with VAT 
@@ -158,7 +179,7 @@ function question1(name1) {
 //   return /* ??? */;
 // }
 
-/**
+/*
   +++++++++++++++++++++++++++++++++++++++++++
   Question 10:
   Write a high order function that takes a retail price and returns that price with VAT
@@ -189,10 +210,10 @@ function question1(name1) {
 
 module.exports = {
   question1,
-  // question2,
-  // question3,
+  question2,
+  question3,
   // question4,
-  // question5,
+   question5,
   // question6,
   // question7,
   // question8, 
