@@ -11,7 +11,7 @@ describe("Answers", function() {
     expect(solution).toEqual(false);
   });
 
-  xit("Q2 - IF/ELSE: Check if two numbers are the same", function() {
+  it("Q2 - IF/ELSE: Check if two numbers are the same", function() {
     let number1 = 1;
     let number2 = 2;
     solution = exercises.question2(number1, number2);
@@ -23,14 +23,14 @@ describe("Answers", function() {
     expect(solution).toEqual(true);
   });
 
-  xit("Q3 - Is the number odd or even?", function() {
+  it("Q3 - Is the number odd or even?", function() {
     solution = exercises.question3(3);
     expect(solution).toEqual("odd");
     solution = exercises.question3(14);
     expect(solution).toEqual("even");
   });
 
-  xit("Q4 - Returns an array containing only every second number from [0 ... 100]", function() {
+  it("Q4 - Returns an array containing only every second number from [0 ... 100]", function() {
     const arr = [ 0, 2, 4, 6, 8, 10, 12, 14, 16, 18,
                   20, 22, 24, 26, 28, 30, 32, 34, 36, 38,
                   40, 42, 44, 46, 48, 50, 52, 54, 56, 58,
@@ -41,7 +41,7 @@ describe("Answers", function() {
     expect(solution).toEqual(arr);
   });
 
-  xit("Q5 - Multiply two numbers", function() {
+  it("Q5 - Multiply two numbers", function() {
     let number1 = 6;
     let number2 = 23;
     solution = exercises.question5(number1, number2);
@@ -58,13 +58,13 @@ describe("Answers", function() {
     expect(solution).toEqual(1.61);
   });
 
-  xit("Q6 - Animals array", function() {
+  it("Q6 - Animals array", function() {
     const animals = ['lions', 'tigers', 'bears']
     solution = exercises.question6(animals);
     expect(solution).toEqual('The array contains 3 animals. These are: lions and tigers and bears.');
   });
 
-  xit("Q7 - Person object", function() {
+  it("Q7 - Person object", function() {
     const person = {
       firstName: 'Sara',
       lastName: 'Marshall',
@@ -76,7 +76,7 @@ describe("Answers", function() {
     expect(solution).toEqual('Hi, my name is Sara Marshall. I am 25 years old and work as a dentist in Warrington.');
   });
 
-  xit("Q8 - Array concatenation", function() {
+  it("Q8 - Array concatenation", function() {
     const array1 = ["lions", "tigers", "bears"];
     const array2 = ["penguins", "flamingoes", "eagles"];
     const extra  = "cobras";
@@ -92,15 +92,17 @@ describe("Answers", function() {
     ]);
   });
 
-  xit("Q9 - Tax addition part1", function() {
+  it("Q9 - Tax addition part1", function() {
     // tax is 20% of the retail price
     const taxAmount = 0.2;
     const retailPrice = "£10"; 
+   
+
     solution = exercises.question9(retailPrice, taxAmount);
     expect(solution).toEqual("£12")
   })
 
-  xit("Q10 - Tax addition part2", function() {
+  it("Q10 - Tax addition part2", function() {
     const tax = 0.2;
     const retailPrice = "£15"
     solution = exercises.question10(retailPrice);

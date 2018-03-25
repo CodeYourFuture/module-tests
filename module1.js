@@ -7,6 +7,8 @@
 */
 
 /**
+
+	hi
   Question 1
   Comparing a string with ‘Code Your Future’, return true if they are the same or
   false otherwise
@@ -17,11 +19,14 @@
 */
 
 function question1(name1) {
-  if (name1) {
+  if (name1 === "Code Your Future") {
     // TODO:
-    return;
+    return true; 
+  } else {
+    return false;
   }
-}
+  }
+
 
 
 /**
@@ -34,15 +39,15 @@ function question1(name1) {
   @returns {boolean} true or false
 */
 
-// function question2(number1, number2) {
-//   if (number1) {
-//     // TODO:
-//     return;
-//   } else {
-//     // TODO:
-//     return;
-//   }
-// }
+function question2(number1, number2) {
+  if (number1 ===number2) {
+    // TODO:
+    return true;
+  } else {
+    // TODO:
+    return false;
+  }
+}
 
 
 /**
@@ -53,11 +58,14 @@ function question1(name1) {
   @returns {string} odd or even
 */
 
-// function question3(number1) {
-//   if (number1) {
-//     return;
-//   }
-// }
+
+function question3(number1) {
+  if (number1 % 2 ===0 ) {
+    return "even";
+  } else {
+    return "odd";
+  }
+}
 
 
 /**
@@ -69,15 +77,20 @@ function question1(name1) {
   @returns [array 0 ... 100] 
 */
 
-// function question4() {
-//   // TODO
-//   for ( /* ??? */ ) {
-//     // TODO
-//   }
-//   return /* ??? */;
-// }
+function question4() {
+  // TODO
+  var num=[]
+          var arr =[]
+          for ( var i = 0; i<=100; i++ ) {
+              num.push(i);
+          }
 
-
+            // TODO
+    
+          arr = num.filter(x => x % 2 === 0);
+          return arr
+          }
+        
 /**
   +++++++++++++++++++++++++++++++++++++++++++
   Question 5:
@@ -87,11 +100,12 @@ function question1(name1) {
   @returns the product of num1 and num2 
 */
 
-// function question5(num1, num2) {
-//   // TODO
+function question5(num1, num2) {
+     
+  // TODO
 
-//   return /* ??? */;
-// }
+  return Math.round((num1 * num2)*100)/100 
+}
 
 
 /**
@@ -104,12 +118,13 @@ function question1(name1) {
     "The array contains { number of animals } animals. These are: {animal1} and {animal2} and {animal3}."
 */
 
-// function question6( animArr ) {
-//   // TODO
+function question6( animArr ) {
+  // TODO
 
-//   return /* ??? */;
-// }
-
+  for (var i=0; i<animArr.length; i++) {
+    return "The array contains" + " " + animArr.length + " " + "animals." + " These are:" + " " + animArr[0] + " " + "and" + " " + animArr[1] + " " + "and" + " " + animArr[2] + "."
+}
+}
 
 /**
   +++++++++++++++++++++++++++++++++++++++++++
@@ -121,10 +136,14 @@ function question1(name1) {
     "Hi, my name is {firstName} {lastName}. I am {age} years old and work as a {occupation} in {location}."
 */
 
-// function question7( personObj ) {
-//   // TODO
-//   return /* ??? */;
-// }
+
+function question7( personObj ) {
+  for (var i = 0; i<personObj.length; i++ ){
+  }
+   return "Hi, my name is" + " " + personObj.firstName + " " +  personObj.lastName + "." + " " + "I am" + " " + personObj.age + " " + "years old and work as a" + " " + personObj.occupation + " " + "in" + " " + personObj.location + "."
+
+  // TODO
+}
 
 
 /**
@@ -136,10 +155,11 @@ function question1(name1) {
   @returns { newArr } containing 7 items
 */
 
-// function question8( arr1, arr2, strExtra ) {
-//   // TODO
-//   return /* ??? */;
-// }
+function question8( arr1, arr2, strExtra ) {
+  // TODO
+  
+  return arr1.concat(arr2, strExtra);
+}
 
 /**
   +++++++++++++++++++++++++++++++++++++++++++
@@ -152,11 +172,16 @@ function question1(name1) {
   @returns { totalPrice } a string containing the currency sign too
 */
 
-// function question9( retailPrice ) {
-//   // TODO
-  
-//   return /* ??? */;
-// }
+function question9( retailPrice, taxAmount ) {
+  var retailPrice1 = retailPrice.replace(/[^0-9\.]+/g,"");
+  var retailPrice2 = parseInt(retailPrice1)
+  var taxAmount = (20 * retailPrice1)/100
+  var final = retailPrice2 + taxAmount
+  // TODO
+ //  add double quotes to result in and currancy
+ return ("£"+ final + "")   
+ }
+
 
 /**
   +++++++++++++++++++++++++++++++++++++++++++
@@ -169,33 +194,31 @@ function question1(name1) {
   @returns { totalPrice } a string containing the currency sign too
 */
 
-// function question10( retailPrice ) {
-//   // TODO
-//   return function extractDigits (retailPrice) {
-//     // find the retail value as an integer, float
-//     const retailValue = /* ??? */;
+function question10( retailPrice ) {
+  // TODO 
+    // find the retail value as an integer, float
+    var retailValue = parseInt(retailPrice.replace(/[^0-9\.]+/g,""));
+  var taxAmount = 0.2
+      // make the tax calculations
+      const retailValueWithTax =  (20 * retailValue)/100 + retailValue
+        // return final result as a string
+         
+        return ("£"+ retailValueWithTax + "")  ;
+      }
+    
+  
 
-//     return function addTax (retailValue, taxAmount) {
-//       // make the tax calculations
-//       const retailValueWithTax = /* ??? */;
 
-//       return function addCurrency ( retailValueWithTax, currency) {
-//         // return final result as a string
-//         return /* ??? */;
-//       }
-//     }
-//   }
-// }
 
 module.exports = {
   question1,
-  // question2,
-  // question3,
-  // question4,
-  // question5,
-  // question6,
-  // question7,
-  // question8, 
-  // question9,
-  // question10
+  question2,
+  question3,
+  question4,
+  question5,
+  question6,
+  question7,
+  question8, 
+  question9,
+  question10
 };
