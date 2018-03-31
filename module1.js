@@ -7,26 +7,23 @@
 */
 /**
   Question 1
-  Comparing a string with ‘Code Your Future’,
-   return true if they are the same or
-  false otherwise
-
+  Comparing a string with ‘Code Your Future’, return true if they are the same or false otherwise
   The function takes the following argument:
   @param {string} name1 a string
   @returns {boolean} true or false
 */
 
-function question1(name1) {
-// let string="Code Your Future";
-  if (name1 === "Code Your Future") {
-   // TODO:
-    return true;
-  }
-  else {
+function question1(name1){
+// let name1='Code Your Future';
+if (name1==='Code Your Future'){
+return true;
+}
+// TODO:
+ else{
     return false;
   }
 };
-// console.log(question1());
+// console.log(question1(name1));
 /**
   +++++++++++++++++++++++++++++++++++++++++++
   Question 2:
@@ -40,13 +37,11 @@ function question1(name1) {
 
 function question2(number1, number2) {
   
-  if (number1 === number2) {
+  
     // TODO:
-    return true;
-  } else {
+    
     // TODO:
-    return false;
-  }
+   
 };
 // console.log(question2(199, 204));
 
@@ -59,23 +54,9 @@ function question2(number1, number2) {
  */
 
  function question3 ( number1) {
-  if( number1 % 2 === 0 ) {
-  return 'even';
-  } else  {
-  return 'odd';
-  } 
+ 
 };
-//  function(number1) {
-//   if( (number1 % 3) === 0 ) {
-//   return true;
-//   } else if (isNaN(number)) {
-//   return 'odd';
-//   } 
-//   else {
-//   return 'even';
-//   }
-//   };
-//   console.log(isEven(2019));
+
 /**
   // +++++++++++++++++++++++++++++++++++++++++
 /** 
@@ -88,15 +69,8 @@ function question2(number1, number2) {
 //   @returns [array 0 ... 100] 
 // */
 // // +++++++++++++++++++++++++++++++++++++++++
-function question4() {
-var everySecond=[];
-for ( i=0; i<=100; i++ ){
-  if ( i%2 === 0 ){
- everySecond.push(i)}
-
-  }
-  return  everySecond;
-  };
+function question4(){
+ };
 
 
 /**
@@ -111,7 +85,7 @@ for ( i=0; i<=100; i++ ){
 function question5(num1, num2) {
   // TODO
 
-  return Math.round(num1*num2*100)/100;
+  
 };
 /**
   +++++++++++++++++++++++++++++++++++++++++++
@@ -127,13 +101,11 @@ function question5(num1, num2) {
 // //     "The array contains { number of animals } 
 // //     animals. These are: {animal1} and {animal2} and {animal3}."
 // // */
-const animals = ['lions', 'tigers', 'bears'];
+
 function question6 (animArr) {
+  // const animals = ['lions', 'tigers', 'bears'];
   // TODO
-for(let i=0; i<=animals.length; i++){
-  return "The array contains " + animArr.length + 
-      " animals. " + "These are: " + animArr[0] + " and " + animArr[1] +  " and " + animArr[2] + "."
-}
+
 };
 /**
   +++++++++++++++++++++++++++++++++++++++++++
@@ -147,21 +119,14 @@ for(let i=0; i<=animals.length; i++){
 //     "Hi, my name is {firstName} {lastName}. 
 //     I am {age} years old and work as a {occupation} in {location}."
 // */
-const person = {
-  firstName: 'Sara',
-  lastName: 'Marshall',
-  age: 25,
-  occupation: 'dentist',
-  location: 'Warrington'
-}
-
-function question7( personObj ) {
-  for( let i=0; i<= personObj.length; i++)
- console.log ("Hi, my name is" +  personObj.firstName +  personObj.lastName +
-    "I am" +   personObj.age + "years old and work as a" +   personObj.occupation + "in" +  person.location)
-// TODO
-return  "Hi, my name is " +  personObj.firstName  +  " "  +  personObj.lastName +
-". I am " +   personObj.age + " years old and work as a " +   personObj.occupation + " in " +  person.location + "."
+// const person = {
+//   firstName: 'Sara',
+//   lastName: 'Marshall',
+//   age: 25,
+//   occupation: 'dentist',
+//   location: 'Warrington'
+// }
+function question7( personObj) {
 };
 /**
   +++++++++++++++++++++++++++++++++++++++++++
@@ -180,8 +145,7 @@ return  "Hi, my name is " +  personObj.firstName  +  " "  +  personObj.lastName 
 // const extra  = "cobras";
 
   function question8( arr1, arr2, strExtra ) {
-    let allarray=arr1.concat(arr2, strExtra)
-  return allarray;
+    
   //     TODO
     };
 // console.log(allarray); 
@@ -198,10 +162,11 @@ return  "Hi, my name is " +  personObj.firstName  +  " "  +  personObj.lastName 
 // let retailPrice=10;
 // let taxAmount=0.2;
 // let stringToRemove="£10"
+// slice the £ off the "£15"
+// The parseInt() function parses a string argument and returns an integer 
 function question9 (retailPrice, taxAmount) {
  // TODO
-return ( "£" + (parseInt(retailPrice.slice(1) * 0.2) +  
-  (parseInt(retailPrice.slice(1)))));
+
 };
 // console.log(   question9 (stringToRemove, 0.2));
 /**
@@ -215,34 +180,48 @@ return ( "£" + (parseInt(retailPrice.slice(1) * 0.2) +
   @returns { totalPrice } a string containing the currency sign too
 */
 
-// function question10( retailPrice ) {
-//   // TODO
-//   return function extractDigits (retailPrice) {
-//     // find the retail value as an integer, float
-//     const retailValue = /* ??? */;
+// it("Q10 - Tax addition part2", function() {
+//   const tax = 0.2;
+//   const retailPrice = "£15"
+//   solution = exercises.question10(retailPrice);
+//   expect(solution).toEqual("£18")
+// })
+// });
+function question10( retailPrice ) {
+  // TODO
+  // return function extractDigits (retailPrice) {
+    // find the retail value as an integer, float
+    // slice the £ off the "£15"
+//     // The parseInt() function parses a string argument and returns an integer 
+//     const retailValue = (parseInt(retailPrive.slice(1)));
+//     // the line below .replace can be used instead of .slice
+//     // const retailValue  = retailPrice.replace(/[^0-9\.]+/g,"");
+//     const taxAmount= 0.2;
 
 //     return function addTax (retailValue, taxAmount) {
 //       // make the tax calculations
-//       const retailValueWithTax =  retailPrice*0.2 +  retailPrice;
-
-//       return function addCurrency ( retailValueWithTax, currency) {
+//       // calculate the 0.2% of the retail price and add the retail price to get the tax
+//       const retailValueWithTax =  (retailPrice * taxAmount )+ retailPrice;
+//         var currency= "£";
+      
+//         return function addCurrency ( retailValueWithTax, currency) {
 //         // return final result as a string
-//         return /* ??? */;
+//         return  "£" + retailValueWithTax;
 //       }
 //     }
 //   }
-// }
+}
 // console.log( question10( retailPrice ));
 
 module.exports = {
   question1,
-  question2,
-  question3,
-  question4,
-  question5,
-  question6,
-  question7,
-  question8, 
-  question9,
+  // question2,
+  // question3,
+  // question4,
+  // question5,
+  // question6,
+  // question7,
+  // question8, 
+  // question9,
   // question10
   };
