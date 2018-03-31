@@ -36,12 +36,14 @@ return true;
 */
 
 function question2(number1, number2) {
-  
-  
-    // TODO:
-    
-    // TODO:
-   
+  if (number1 === number2){
+return true;
+  }
+  // TODO:
+  // TODO:
+   else{
+     return false;
+   }
 };
 // console.log(question2(199, 204));
 
@@ -215,7 +217,7 @@ function question10( retailPrice ) {
 
 module.exports = {
   question1,
-  // question2,
+  question2,
   // question3,
   // question4,
   // question5,
