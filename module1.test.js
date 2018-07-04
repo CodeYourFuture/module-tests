@@ -1,5 +1,9 @@
 var exercises = require("./module1");
 
+/*
+  In order to run a test, change the function name from `xit` to `it` 
+ */
+
 describe("Answers", function() {
   beforeEach(function() {});
 
@@ -31,12 +35,59 @@ describe("Answers", function() {
   });
 
   xit("Q4 - Returns an array containing only every second number from [0 ... 100]", function() {
-    const arr = [ 0, 2, 4, 6, 8, 10, 12, 14, 16, 18,
-                  20, 22, 24, 26, 28, 30, 32, 34, 36, 38,
-                  40, 42, 44, 46, 48, 50, 52, 54, 56, 58,
-                  60, 62, 64, 66, 68, 70, 72, 74, 76, 78,
-                  80, 82, 84, 86, 88, 90, 92, 94, 96, 98, 100
-                ];
+    const arr = [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20,
+      22,
+      24,
+      26,
+      28,
+      30,
+      32,
+      34,
+      36,
+      38,
+      40,
+      42,
+      44,
+      46,
+      48,
+      50,
+      52,
+      54,
+      56,
+      58,
+      60,
+      62,
+      64,
+      66,
+      68,
+      70,
+      72,
+      74,
+      76,
+      78,
+      80,
+      82,
+      84,
+      86,
+      88,
+      90,
+      92,
+      94,
+      96,
+      98,
+      100
+    ];
     solution = exercises.question4();
     expect(solution).toEqual(arr);
   });
@@ -59,27 +110,31 @@ describe("Answers", function() {
   });
 
   xit("Q6 - Animals array", function() {
-    const animals = ['lions', 'tigers', 'bears']
+    const animals = ["lions", "tigers", "bears"];
     solution = exercises.question6(animals);
-    expect(solution).toEqual('The array contains 3 animals. These are: lions and tigers and bears.');
+    expect(solution).toEqual(
+      "The array contains 3 animals. These are: lions and tigers and bears."
+    );
   });
 
   xit("Q7 - Person object", function() {
     const person = {
-      firstName: 'Sara',
-      lastName: 'Marshall',
+      firstName: "Sara",
+      lastName: "Marshall",
       age: 25,
-      occupation: 'dentist',
-      location: 'Warrington'
-    }
+      occupation: "dentist",
+      location: "Warrington"
+    };
     solution = exercises.question7(person);
-    expect(solution).toEqual('Hi, my name is Sara Marshall. I am 25 years old and work as a dentist in Warrington.');
+    expect(solution).toEqual(
+      "Hi, my name is Sara Marshall. I am 25 years old and work as a dentist in Warrington."
+    );
   });
 
   xit("Q8 - Array concatenation", function() {
     const array1 = ["lions", "tigers", "bears"];
     const array2 = ["penguins", "flamingoes", "eagles"];
-    const extra  = "cobras";
+    const extra = "cobras";
     solution = exercises.question8(array1, array2, extra);
     expect(solution).toEqual([
       "lions",
@@ -95,15 +150,15 @@ describe("Answers", function() {
   xit("Q9 - Tax addition part1", function() {
     // tax is 20% of the retail price
     const taxAmount = 0.2;
-    const retailPrice = "£10"; 
+    const retailPrice = "£10";
     solution = exercises.question9(retailPrice, taxAmount);
-    expect(solution).toEqual("£12")
-  })
+    expect(solution).toEqual("£12");
+  });
 
   xit("Q10 - Tax addition part2", function() {
     const tax = 0.2;
-    const retailPrice = "£15"
+    const retailPrice = "£15";
     solution = exercises.question10(retailPrice);
-    expect(solution).toEqual("£18")
-  })
+    expect(solution).toEqual("£18");
+  });
 });

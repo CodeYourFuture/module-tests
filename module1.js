@@ -3,7 +3,10 @@
   Welcome to JS Test 1!
   Please answer the following questions by filling in the parts marked with TODO:
 
-  Please UNCOMMENT each function, and its associated name in the module.exports object at the bottom of the file, as you reach them.
+  The goal is to make all the tests pass!
+
+  Please UNCOMMENT each function, and its associated name in the module.exports object at the bottom of the file, 
+  as you reach them.
 */
 
 /**
@@ -22,7 +25,6 @@ function question1(name1) {
     return;
   }
 }
-
 
 /**
   +++++++++++++++++++++++++++++++++++++++++++
@@ -44,7 +46,6 @@ function question1(name1) {
 //   }
 // }
 
-
 /**
   +++++++++++++++++++++++++++++++++++++++++++
   Question 3:
@@ -58,7 +59,6 @@ function question1(name1) {
 //     return;
 //   }
 // }
-
 
 /**
   +++++++++++++++++++++++++++++++++++++++++++
@@ -77,7 +77,6 @@ function question1(name1) {
 //   return /* ??? */;
 // }
 
-
 /**
   +++++++++++++++++++++++++++++++++++++++++++
   Question 5:
@@ -92,7 +91,6 @@ function question1(name1) {
 
 //   return /* ??? */;
 // }
-
 
 /**
   +++++++++++++++++++++++++++++++++++++++++++
@@ -110,7 +108,6 @@ function question1(name1) {
 //   return /* ??? */;
 // }
 
-
 /**
   +++++++++++++++++++++++++++++++++++++++++++
   Question 7:
@@ -125,7 +122,6 @@ function question1(name1) {
 //   // TODO
 //   return /* ??? */;
 // }
-
 
 /**
   +++++++++++++++++++++++++++++++++++++++++++
@@ -154,7 +150,7 @@ function question1(name1) {
 
 // function question9( retailPrice ) {
 //   // TODO
-  
+
 //   return /* ??? */;
 // }
 
@@ -188,14 +184,14 @@ function question1(name1) {
 // }
 
 module.exports = {
-  question1,
+  question1
   // question2,
   // question3,
   // question4,
   // question5,
   // question6,
   // question7,
-  // question8, 
+  // question8,
   // question9,
   // question10
 };
