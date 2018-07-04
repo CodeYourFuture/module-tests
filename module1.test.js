@@ -113,29 +113,15 @@ describe("Answers", function() {
     const animals = ["lions", "tigers", "bears"];
     solution = exercises.question6(animals);
     expect(solution).toEqual(
-      "The array contains 3 animals. These are: lions and tigers and bears."
+      "The array contains 3 animals. These are: lions,tigers,bears."
     );
   });
 
-  xit("Q7 - Person object", function() {
-    const person = {
-      firstName: "Sara",
-      lastName: "Marshall",
-      age: 25,
-      occupation: "dentist",
-      location: "Warrington"
-    };
-    solution = exercises.question7(person);
-    expect(solution).toEqual(
-      "Hi, my name is Sara Marshall. I am 25 years old and work as a dentist in Warrington."
-    );
-  });
-
-  xit("Q8 - Array concatenation", function() {
+  xit("Q7 - Array concatenation", function() {
     const array1 = ["lions", "tigers", "bears"];
     const array2 = ["penguins", "flamingoes", "eagles"];
     const extra = "cobras";
-    solution = exercises.question8(array1, array2, extra);
+    solution = exercises.question7(array1, array2, extra);
     expect(solution).toEqual([
       "lions",
       "tigers",
@@ -147,18 +133,11 @@ describe("Answers", function() {
     ]);
   });
 
-  xit("Q9 - Tax addition part1", function() {
+  xit("Q8 - Tax addition", function() {
     // tax is 20% of the retail price
     const taxAmount = 0.2;
     const retailPrice = "£10";
-    solution = exercises.question9(retailPrice, taxAmount);
+    solution = exercises.question8(retailPrice, taxAmount);
     expect(solution).toEqual("£12");
-  });
-
-  xit("Q10 - Tax addition part2", function() {
-    const tax = 0.2;
-    const retailPrice = "£15";
-    solution = exercises.question10(retailPrice);
-    expect(solution).toEqual("£18");
   });
 });
