@@ -4,7 +4,7 @@ var exercises = require("./module1");
   In order to run a test, change the function name from `xit` to `it` 
  */
 
-describe("Answers", function() {
+describe("Module 1 Answers", function() {
   beforeEach(function() {});
 
   it("Q1 - Check if a string is Code Your Future", function() {
