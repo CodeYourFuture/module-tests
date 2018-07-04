@@ -1,5 +1,16 @@
 /**
   +++++++++++++++++++++++++++++++++++++++++++
+  Welcome to the JavaScript test (module 2)!
+  Please answer the following questions by filling in the parts marked with TODO:
+
+  The goal is to make all the tests pass!
+
+  Please UNCOMMENT each function, and its associated name in the module.exports
+  object at the bottom of the file, as you reach them.
+*/
+
+/**
+  +++++++++++++++++++++++++++++++++++++++++++
   Question 1:
   Write a function that receives a 'person' object as a parameter. This object
   contains the information about the person as 5 key/value pairs (`firstName`,
