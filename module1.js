@@ -1,19 +1,16 @@
 /**
   +++++++++++++++++++++++++++++++++++++++++++
-  Welcome to JS Test 1!
+  Welcome to the JavaScript test!
   Please answer the following questions by filling in the parts marked with TODO:
 
-  Please UNCOMMENT each function, and its associated name in the module.exports object at the bottom of the file, as you reach them.
+  The goal is to make all the tests pass!
 */
 
 /**
   Question 1
-  Comparing a string with ‘Code Your Future’, return true if they are the same or
-  false otherwise
-
-  The function takes the following argument:
-  @param {string} name1 a string
-  @returns {boolean} true or false
+  Write a function that compares an input string with "Code Your Future".
+  
+  Return true if they are the same or false otherwise.
 */
 
 function question1(name1) {
@@ -23,179 +20,106 @@ function question1(name1) {
   }
 }
 
-
 /**
-  +++++++++++++++++++++++++++++++++++++++++++
   Question 2:
-  IF / ELSE Statements:
-  Check if two numbers are equal, if they are return true or otherwise return false
-  @param {number} number1 a regular integer
-  @param {number} number2 a regular integer
-  @returns {boolean} true or false
+  Write a function that compares two input integers.
+
+  Return true if they are equal, or false otherwise.
 */
 
-// function question2(number1, number2) {
-//   if (number1) {
-//     // TODO:
-//     return;
-//   } else {
-//     // TODO:
-//     return;
-//   }
-// }
-
+function question2(number1, number2) {
+  // TODO:
+}
 
 /**
-  +++++++++++++++++++++++++++++++++++++++++++
   Question 3:
-  Is the number even or odd?
-  @param {number} number1 a regular integer
-  @returns {string} odd or even
+  Write a function that checks if an input integer is an even or an odd number.
+
+  Return a string "odd" if the number is odd, or a string "even" if the number is even.
 */
 
-// function question3(number1) {
-//   if (number1) {
-//     return;
-//   }
-// }
-
+function question3(number) {
+  // TODO:
+}
 
 /**
-  +++++++++++++++++++++++++++++++++++++++++++
   Question 4:
-  Write a for loop that loops over the numbers from 0 to 100, returning an array containing only every second number. So it should return [ 0, 2, 4, 6, 8, 10 .... etc.]
+  Write a function that takes an array of integers as input, and returns an array containing only every second element.
 
-  @param none
-  @returns [array 0 ... 100] 
-*/
-
-// function question4() {
-//   // TODO
-//   for ( /* ??? */ ) {
-//     // TODO
-//   }
-//   return /* ??? */;
-// }
-
-
-/**
-  +++++++++++++++++++++++++++++++++++++++++++
-  Question 5:
-  Write a function called multiply that multiplies two numbers together. It should take two numbers as parameters and return the answer.
-
-  @param { num1, num2 } two mumbers; integer, float, either negative or positive
-  @returns the product of num1 and num2 
-*/
-
-// function question5(num1, num2) {
-//   // TODO
-
-//   return /* ??? */;
-// }
-
-
-/**
-  +++++++++++++++++++++++++++++++++++++++++++
-  Question 6:
-  Write a function that takes an array as a parameter, establishes how many items it contains, and then writes out the names of the animals into a string.
-
-  @param { animArr } an array containing the names of a number of animals
-  @returns { string } in the format...
-    "The array contains { number of animals } animals. These are: {animal1} and {animal2} and {animal3}."
-*/
-
-// function question6( animArr ) {
-//   // TODO
-
-//   return /* ??? */;
-// }
-
-
-/**
-  +++++++++++++++++++++++++++++++++++++++++++
-  Question 7:
-  Write a function to use a 'person' object containing their details as 5 key/value pairs
-
-  @param { personObj } an array containing the names of a number of animals
-  @returns { string } in the format...
-    "Hi, my name is {firstName} {lastName}. I am {age} years old and work as a {occupation} in {location}."
-*/
-
-// function question7( personObj ) {
-//   // TODO
-//   return /* ??? */;
-// }
-
-
-/**
-  +++++++++++++++++++++++++++++++++++++++++++
-  Question 8:
-  Write a function to concatenate two arrays, then add an additional item to the resulting array. The two input arrays must not be modified.
-
-  @param { arr1, arr2, strExtra } two arrays, each containing 3 items, and a string value as the additional item
-  @returns { newArr } containing 7 items
-*/
-
-// function question8( arr1, arr2, strExtra ) {
-//   // TODO
-//   return /* ??? */;
-// }
-
-/**
-  +++++++++++++++++++++++++++++++++++++++++++
-  Question 9:
-  Write a function that takes a retail price and returns that price with VAT 
-
-  @param { retailPrice, taxAmount } two 
-  - retailPrice: string containing the currency and an integer, float, either negative or positive
-  - taxAmount: a integer or float representing the tax amount
-  @returns { totalPrice } a string containing the currency sign too
-*/
-
-// function question9( retailPrice ) {
-//   // TODO
+  Use any array iteration methods known to you.
   
-//   return /* ??? */;
-// }
-
-/**
-  +++++++++++++++++++++++++++++++++++++++++++
-  Question 10:
-  Write a high order function that takes a retail price and returns that price with VAT
-
-  @param { retailPrice } two 
-  - retailPrice: string containing the currency and an integer, float, either negative or positive
-  - taxAmount: a integer or float representing the tax amount
-  @returns { totalPrice } a string containing the currency sign too
+  For example, if the input array is: [1,2,3,4,5,6]
+  the output would be: [2,4,6]
 */
 
-// function question10( retailPrice ) {
-//   // TODO
-//   return function extractDigits (retailPrice) {
-//     // find the retail value as an integer, float
-//     const retailValue = /* ??? */;
+function question4(array) {
+  // TODO:
+}
 
-//     return function addTax (retailValue, taxAmount) {
-//       // make the tax calculations
-//       const retailValueWithTax = /* ??? */;
+/**
+  Question 5:
+  Write a function that multiplies two input numbers (positive or negative).
 
-//       return function addCurrency ( retailValueWithTax, currency) {
-//         // return final result as a string
-//         return /* ??? */;
-//       }
-//     }
-//   }
-// }
+  Return the result of the multiplication.
+*/
+
+function question5(number1, number2) {
+  // TODO:
+}
+
+/**
+  Question 6:
+  Write a function that takes an array as input.
+
+  The output should be a string, which contains:
+  - the number of elements in the array
+  - a list of all elements in the array
+
+  The output string should be in the following format:
+  "The array contains {number of elements} animals. These are: {element1},{element2},{element3},{element4}."
+*/
+
+function question6(array) {
+  // TODO:
+}
+
+/**
+  Question 7:
+  Write a function that concatenates two arrays, then adds an additional item to the resulting array.
+  The inputs are:
+  -  two arrays
+  -  a string (as the additional item). 
+  The two input arrays must not be modified.
+
+  The output is one array.
+*/
+
+function question7(array1, array2, extraElement) {
+  // TODO:
+}
+
+/**
+  Question 8:
+  Write a function that calculates a price with added tax.
+
+  The inputs are:
+   - a string containing the currency and an integer, float, either negative or positive. For example "£34.59"
+   - an integer or float representing the tax amount
+
+  The output should be a string, that represents the calculated price with the currency symbol.
+*/
+
+function question8(retailPrice, taxAmount) {
+  // TODO:
+}
 
 module.exports = {
   question1,
-  // question2,
-  // question3,
-  // question4,
-  // question5,
-  // question6,
-  // question7,
-  // question8, 
-  // question9,
-  // question10
+  question2,
+  question3,
+  question4,
+  question5,
+  question6,
+  question7,
+  question8
 };

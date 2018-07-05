@@ -11,9 +11,9 @@ We suggest you to only use the Javascript documentation from [MDN](https://devel
 
 ## Instructions
 
-1. Please UNCOMMENT each function, and its associated name in the module.exports object at the bottom of the file, as you reach them.
-2. Also, change the `module1.test.js` file from...
-
+1.  Fork and clone this repository.
+2.  Please provide implementation for each function - fill in the parts marked with `TODO:`
+3.  Tests marked with `xit` are ignored, so in order to run a test, you need to change the `module1.test.js` file from...
 
 ```
   xit("Q? - Description", function() { ...
@@ -25,13 +25,14 @@ to
   it("Q? - Description", function() { ...
 ```
 
-3. Make sure you use git to push your code to GitHub when you have successfully tested your solution to each question.
-4. When you have completed the questions, make a pull request back to the CYF repository.
+4.  Make sure you use git to push your code to GitHub when you have successfully tested your solution to each question.
+5.  When you have completed the questions, make a pull request back to the CYF repository.
 
 ## Goals
 
-* Read carefully all the code, all comments as well as the unit tests to understand what the code is supposed to do
-* Fill in the parts marked with TODO
+- Read carefully all the code, all comments as well as the unit tests to understand what the code is supposed to do
+- Fill in the parts marked with TODO
+- Make all the tests pass! :)
 
 **Bonus:** if you're done before the end of the allotted time, you can try to modify your code to use the [ES6 syntax](https://babeljs.io/learn-es2015/).
 
