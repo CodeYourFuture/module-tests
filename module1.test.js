@@ -102,11 +102,6 @@ describe("Answers", function() {
     number2 = 5;
     solution = exercises.question5(number1, number2);
     expect(solution).toEqual(-25);
-
-    number1 = 0.7;
-    number2 = 2.3;
-    solution = exercises.question5(number1, number2);
-    expect(solution).toEqual(1.61);
   });
 
   xit("Q6 - Animals array", function() {
