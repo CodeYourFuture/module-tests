@@ -10,7 +10,6 @@
 */
 
 /**
-  +++++++++++++++++++++++++++++++++++++++++++
   Question 1:
   Write a function that receives a 'person' object as a parameter. This object
   contains the information about the person as 5 key/value pairs (`firstName`,
@@ -27,7 +26,6 @@ function question1(personObj) {
 }
 
 /**
-  +++++++++++++++++++++++++++++++++++++++++++
   Question 2:
   Write a function that receives a 'car' object as a parameter. This object
   contains information about the car (`make`, `model`, `price`). One of the
@@ -43,7 +41,6 @@ function question2(carObj) {
 }
 
 /**
-  +++++++++++++++++++++++++++++++++++++++++++
   Question 3:
   Write a function that receives an array of 'dog' objects as a parameter. Each
   object contains information about the dog (`name`, `weeksOld`).
@@ -59,16 +56,13 @@ function question3(dogs) {
 }
 
 /**
-  +++++++++++++++++++++++++++++++++++++++++++
   Question 4:
   Using DOM methods select the element with the id `root`. Also the select the
   element with the class `wrapper`.
 
-  Return both elements in an object with the following keys:
-  {
-    id: // YOUR ID ELEMENT HERE
-    class: // YOUR CLASS ELEMENT HERE
-  }
+  Return both elements in an object with the following keys: `id` for the
+  element with the id `root` and `class` for the element with the class
+  `wrapper`.
 
   NOTE: we have set up the tests so that all of the DOM objects & methods are
   available in the tests. You do *not* need to open the tests in a browser.
@@ -81,7 +75,6 @@ function question4() {
 }
 
 /**
-  +++++++++++++++++++++++++++++++++++++++++++
   Question 5:
   Write a function that creates an click event listener on the `#btn` element.
 
@@ -97,7 +90,6 @@ function question5() {
 }
 
 /**
-  +++++++++++++++++++++++++++++++++++++++++++
   Question 6:
   Write a function that receives a Promise as a parameter and handles the
   successful response from the Promise. In the handler it should  concatenate
@@ -111,7 +103,6 @@ function question6(promise) {
 }
 
 /**
-  +++++++++++++++++++++++++++++++++++++++++++
   Question 7:
   Write a function that uses the `fetch` function to make an AJAX GET call to
   'https://example.com'. Handle the successful response and convert it from
@@ -124,7 +115,6 @@ function question7() {
 }
 
 /**
-  +++++++++++++++++++++++++++++++++++++++++++
   Question 8:
   Write a function that uses the `fetch` function to make an AJAX POST call to
   'https://example.com'.
