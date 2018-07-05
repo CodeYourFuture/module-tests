@@ -1,4 +1,4 @@
-# JavaScript Module 1 Exercises
+# JavaScript Modules 1 & 2 Exercises
 
 These exercises will allow us - and also yourself - to evaluate your current knowledge about JavaScript programming.
 
