@@ -76,7 +76,7 @@ function question4() {
 
 /**
   Question 5:
-  Write a function that creates an click event listener on the `#btn` element.
+  Write a function that creates a click event listener on the `#btn` element.
 
   The event listener should change the background color of the `#change-me`
   element to `blue` when the button is clicked.
