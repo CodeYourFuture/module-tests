@@ -15,7 +15,7 @@ describe("Answers", function() {
     expect(solution).toEqual(false);
   });
 
-  xit("Q2 - IF/ELSE: Check if two numbers are the same", function() {
+  xit("Q2 - Check if two numbers are the same", function() {
     let number1 = 1;
     let number2 = 2;
     solution = exercises.question2(number1, number2);
@@ -34,7 +34,7 @@ describe("Answers", function() {
     expect(solution).toEqual("even");
   });
 
-  xit("Q4 - Returns an array containing only every second number from [0 ... 100]", function() {
+  xit("Q4 - Returns an array containing only every second number", function() {
     const arr = [
       0,
       2,

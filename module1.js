@@ -4,9 +4,6 @@
   Please answer the following questions by filling in the parts marked with TODO:
 
   The goal is to make all the tests pass!
-
-  Please UNCOMMENT each function, and its associated name in the module.exports object at the bottom of the file, 
-  as you reach them.
 */
 
 /**
@@ -49,7 +46,7 @@ function question3(number) {
   Question 4:
   Write a function that takes an array of integers as input, and returns an array containing only every second element.
 
-  Use the .forEach() or .map() functions to do this.
+  Use any array iteration methods known to you.
   
   For example, if the input array is: [1,2,3,4,5,6]
   the output would be: [2,4,6]
@@ -61,7 +58,7 @@ function question4(array) {
 
 /**
   Question 5:
-  Write a function that multiplies two input integers or two input floats (positive or negative).
+  Write a function that multiplies two input numbers (positive or negative).
 
   Return the result of the multiplication.
 */
@@ -117,12 +114,12 @@ function question8(retailPrice, taxAmount) {
 }
 
 module.exports = {
-  question1
-  // question2,
-  // question3,
-  // question4,
-  // question5,
-  // question6,
-  // question7,
-  // question8
+  question1,
+  question2,
+  question3,
+  question4,
+  question5,
+  question6,
+  question7,
+  question8
 };
