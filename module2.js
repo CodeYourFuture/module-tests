@@ -21,10 +21,10 @@
   {occupation} in {location}."
 */
 
-// function question1(personObj) {
-//   // TODO
-//   return /* ??? */;
-// }
+function question1(personObj) {
+  // TODO
+  return /* ??? */;
+}
 
 /**
   +++++++++++++++++++++++++++++++++++++++++++
@@ -37,10 +37,10 @@
   the result.
 */
 
-// function question2(carObj) {
-//   // TODO
-//   return /* ??? */
-// }
+function question2(carObj) {
+  // TODO
+  return /* ??? */
+}
 
 /**
   +++++++++++++++++++++++++++++++++++++++++++
@@ -53,10 +53,10 @@
   Return the array of dogs names that are more than 3 weeks old.
 */
 
-// function question3(dogs) {
-//   // TODO
-//   return /* ??? */
-// }
+function question3(dogs) {
+  // TODO
+  return /* ??? */
+}
 
 /**
   +++++++++++++++++++++++++++++++++++++++++++
@@ -74,11 +74,11 @@
   available in the tests. You do *not* need to open the tests in a browser.
 */
 
-// function question4() {
-//   return {
-//     /* ??? */
-//   }
-// }
+function question4() {
+  return {
+    /* ??? */
+  }
+}
 
 /**
   +++++++++++++++++++++++++++++++++++++++++++
@@ -92,9 +92,9 @@
   available in the tests. You do *not* need to open the tests in a browser.
 */
 
-// function question5() {
-//   // TODO
-// }
+function question5() {
+  // TODO
+}
 
 /**
   +++++++++++++++++++++++++++++++++++++++++++
@@ -105,10 +105,10 @@
   return the Promise so chaining can continue.
 */
 
-// function question6(promise) {
-//   // TODO
-//   return /* ??? */
-// }
+function question6(promise) {
+  // TODO
+  return /* ??? */
+}
 
 /**
   +++++++++++++++++++++++++++++++++++++++++++
@@ -118,10 +118,10 @@
   JSON. Finally get the `hello` field from the response data and return it.
 */
 
-// function question7() {
-//   return fetch('https://example.com')
-//   // TODO
-// }
+function question7() {
+  return fetch('https://example.com')
+  // TODO
+}
 
 /**
   +++++++++++++++++++++++++++++++++++++++++++
@@ -133,17 +133,17 @@
   up for you.
 */
 
-// function question8() {
-//   // TODO
-// }
+function question8() {
+  // TODO
+}
 
 module.exports = {
-  // question1,
-  // question2,
-  // question3,
-  // question4,
-  // question5,
-  // question6,
-  // question7,
-  // question8
+  question1,
+  question2,
+  question3,
+  question4,
+  question5,
+  question6,
+  question7,
+  question8
 }
