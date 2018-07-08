@@ -45,7 +45,7 @@ git clone https://github.com/codeyourfuture/module-tests.git
 
 cd module-tests
 
-npm install
+
 ```
 
 ## Run the unit tests

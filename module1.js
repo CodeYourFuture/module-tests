@@ -14,9 +14,10 @@
 */
 
 function question1(name1) {
-  if (name1) {
-    // TODO:
-    return;
+  if (name1.toString() === "Code Your Future") {
+    return true;
+  } else {
+    return false;
   }
 }
 
@@ -28,7 +29,11 @@ function question1(name1) {
 */
 
 function question2(number1, number2) {
-  // TODO:
+  if (number1 === number2) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 /**
@@ -39,7 +44,12 @@ function question2(number1, number2) {
 */
 
 function question3(number) {
-  // TODO:
+  if (number % 2 === 0) {
+    return "even"
+  }
+  else {
+    return "odd";
+  }
 }
 
 /**
@@ -52,8 +62,12 @@ function question3(number) {
   the output would be: [2,4,6]
 */
 
-function question4(array) {
-  // TODO:
+var second = function question4(array) {
+
+  for (i = 0; i < array.length - 1; i += 2) {
+    return array[i]
+  }
+
 }
 
 /**
@@ -63,9 +77,14 @@ function question4(array) {
   Return the result of the multiplication.
 */
 
+
 function question5(number1, number2) {
-  // TODO:
+
+  return number1 * number2
+
+
 }
+// console.log(question5(number1, number2));
 
 /**
   Question 6:
@@ -78,9 +97,14 @@ function question5(number1, number2) {
   The output string should be in the following format:
   "The array contains {number of elements} animals. These are: {element1},{element2},{element3},{element4}."
 */
-
+const animals = ["lions", "tigers", "bears"];
 function question6(array) {
-  // TODO:
+  var length = array.length
+  var animalList = {};
+  animalList.push().toString(animals);
+  //still need to work it out
+
+  return `The array contains ${length} animals. These are:${animalList}.`
 }
 
 /**
@@ -95,7 +119,8 @@ function question6(array) {
 */
 
 function question7(array1, array2, extraElement) {
-  // TODO:
+  var join = array1.concat(array2);
+  var extraAdd = join.push(extraElement);
 }
 
 /**
