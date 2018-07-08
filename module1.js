@@ -14,9 +14,12 @@
 */
 
 function question1(name1) {
-  if (name1) {
+  if (name1 == "Code Your Future") {
     // TODO:
-    return;
+   return true;
+  }
+  else  {
+    return false;
   }
 }
 
@@ -29,6 +32,12 @@ function question1(name1) {
 
 function question2(number1, number2) {
   // TODO:
+  if (number1===number2){
+    return true;
+  }
+  else {
+    return false;
+  }
 }
 
 /**
@@ -40,6 +49,12 @@ function question2(number1, number2) {
 
 function question3(number) {
   // TODO:
+  if (number%2 == 0){
+    return "even";
+  }
+  else{
+    return "odd";
+  }
 }
 
 /**
@@ -54,6 +69,7 @@ function question3(number) {
 
 function question4(array) {
   // TODO:
+  return array.filter((number,index)=>index%2==0).map(number=>number);
 }
 
 /**
@@ -65,6 +81,7 @@ function question4(array) {
 
 function question5(number1, number2) {
   // TODO:
+  return result = number1*number2;
 }
 
 /**
@@ -81,6 +98,7 @@ function question5(number1, number2) {
 
 function question6(array) {
   // TODO:
+  return `The array contains 3 animals. These are: ${array.join(",")}.`;
 }
 
 /**
@@ -96,6 +114,8 @@ function question6(array) {
 
 function question7(array1, array2, extraElement) {
   // TODO:
+  var array3 
+  return array3 = array1.concat(array2).splice(-1,0,extraElement);
 }
 
 /**
@@ -111,6 +131,12 @@ function question7(array1, array2, extraElement) {
 
 function question8(retailPrice, taxAmount) {
   // TODO:
+  var number = retailPrice.substr(1);
+
+  var targetNumber = parseInt(number);
+  var result = ((targetNumber * taxAmount )/0.20).toString();
+  
+  return `£${result}`;
 }
 
 module.exports = {
