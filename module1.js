@@ -93,6 +93,10 @@ function question5(number1, number2) {
 
 function question6(array) {
   // TODO:
+  const numberOfElement = array.length
+  const combinedArr = array.join(',')
+  let formatedStr = `The array contains ${numberOfElement} animals. These are: ${combinedArr}.`;
+  return formatedStr
 }
 
 /**

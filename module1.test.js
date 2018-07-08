@@ -106,7 +106,7 @@ describe("Module 1 Answers", function() {
     expect(solution).toEqual(-25);
   });
 
-  xit("Q6 - Animals array", function() {
+  it("Q6 - Animals array", function() {
     const animals = ["lions", "tigers", "bears"];
     solution = exercises.question6(animals);
     expect(solution).toEqual(
