@@ -57,12 +57,13 @@ function question3(number) {
 
 function question4(array) {
   // TODO:
-  console.log(array);
+  // console.log(array);
   let newArr = []
-  for (let i = 0; i < array.length; i++){
-    newArr.push(array[i])
+  newArr.push(array[0]);
+  for (let i = 0; i < array.length - 1; i++){
+      newArr.push(array[i+1]);
   }
-  console.log(newArr)
+  // console.log(newArr)
   return newArr
   // array.map((ele, index) => )
 }

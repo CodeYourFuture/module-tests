@@ -91,7 +91,7 @@ describe('Module 2 Answers', function() {
     });
   });
 
-  xit('Q7 - Fetch GET', function() {
+  it('Q7 - Fetch GET', function() {
     // We don't want to actually call the `fetch` function because it might be
     // slow to respond or break. Instead we "mock" the `fetch` function to
     // return the same kind of Promise as we get from a normal `fetch` call
@@ -113,7 +113,7 @@ describe('Module 2 Answers', function() {
     });
   });
 
-  xit('Q8 - Fetch POST', function() {
+  it('Q8 - Fetch POST', function() {
     global.fetch = jest.fn();
 
     exercises.question8();

@@ -107,7 +107,7 @@ function question5() {
   // TODO
   let btn = document.querySelector("#btn")
   btn.addEventListener('click', () => {
-    document.querySelector("#change-me").style = 'blue'
+    document.querySelector("#change-me").style.backgroundColor = 'blue'
   })
 }
 
@@ -147,6 +147,16 @@ function question7() {
 
 function question8() {
   // TODO
+  return fetch("https://example.com",
+{
+  body: JSON.stringify({
+    hello: 'somethig!'
+  }),
+  method: 'POST',
+  headers: {
+    "Content-Type":'application/json'
+  }
+});
 }
 
 module.exports = {

@@ -36,7 +36,7 @@ describe("Module 1 Answers", function() {
     expect(solution).toEqual("even");
   });
 
-  xit("Q4 - Returns an array containing only every second number", function() {
+  it("Q4 - Returns an array containing only every second number", function() {
     const arr = [
       0,
       2,
