@@ -15,7 +15,7 @@ describe("Module 1 Answers", function() {
     expect(solution).toEqual(false);
   });
 
-  xit("Q2 - Check if two numbers are the same", function() {
+  it("Q2 - Check if two numbers are the same", function() {
     let number1 = 1;
     let number2 = 2;
     solution = exercises.question2(number1, number2);
@@ -27,7 +27,7 @@ describe("Module 1 Answers", function() {
     expect(solution).toEqual(true);
   });
 
-  xit("Q3 - Is the number odd or even?", function() {
+  it("Q3 - Is the number odd or even?", function() {
     solution = exercises.question3(3);
     expect(solution).toEqual("odd");
     solution = exercises.question3(14);
@@ -92,7 +92,7 @@ describe("Module 1 Answers", function() {
     expect(solution).toEqual(arr);
   });
 
-  xit("Q5 - Multiply two numbers", function() {
+  it("Q5 - Multiply two numbers", function() {
     let number1 = 6;
     let number2 = 23;
     solution = exercises.question5(number1, number2);
@@ -104,7 +104,7 @@ describe("Module 1 Answers", function() {
     expect(solution).toEqual(-25);
   });
 
-  xit("Q6 - Animals array", function() {
+  it("Q6 - Animals array", function() {
     const animals = ["lions", "tigers", "bears"];
     solution = exercises.question6(animals);
     expect(solution).toEqual(
@@ -112,7 +112,7 @@ describe("Module 1 Answers", function() {
     );
   });
 
-  xit("Q7 - Array concatenation", function() {
+  it("Q7 - Array concatenation", function() {
     const array1 = ["lions", "tigers", "bears"];
     const array2 = ["penguins", "flamingoes", "eagles"];
     const extra = "cobras";

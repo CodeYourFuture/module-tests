@@ -14,10 +14,9 @@
 */
 
 function question1(name1) {
-  if (name1) {
-    // TODO:
-    return;
-  }
+  if (name1 === "Code Your Future") {
+    return true;
+  } else return false;
 }
 
 /**
@@ -28,6 +27,9 @@ function question1(name1) {
 */
 
 function question2(number1, number2) {
+  if (number1 === number2) {
+    return true;
+  } else return false;
   // TODO:
 }
 
@@ -39,9 +41,10 @@ function question2(number1, number2) {
 */
 
 function question3(number) {
-  // TODO:
+  if (number % 2 === 0) {
+    return "even";
+  } else return "odd";
 }
-
 /**
   Question 4:
   Write a function that takes an array of integers as input, and returns an array containing only every second element.
@@ -53,7 +56,7 @@ function question3(number) {
 */
 
 function question4(array) {
-  // TODO:
+  return array.map(item => item + 1);
 }
 
 /**
@@ -64,7 +67,7 @@ function question4(array) {
 */
 
 function question5(number1, number2) {
-  // TODO:
+  return number1 * number2;
 }
 
 /**
@@ -80,7 +83,18 @@ function question5(number1, number2) {
 */
 
 function question6(array) {
-  // TODO:
+  var sum = array.length;
+  return (
+    "The array contains " +
+    sum +
+    " animals. These are: " +
+    array[0] +
+    "," +
+    array[1] +
+    "," +
+    array[2] +
+    "."
+  );
 }
 
 /**
@@ -95,7 +109,8 @@ function question6(array) {
 */
 
 function question7(array1, array2, extraElement) {
-  // TODO:
+  var addArray = array1.concat(array2);
+  var newArray = addArray.push("");
 }
 
 /**
