@@ -7,7 +7,7 @@ var exercises = require("./module1");
 describe("Module 1 Answers", function() {
   beforeEach(function() {});
 
-  it("Q1 - Check if a string is Code Your Future", function() {
+  xit("Q1 - Check if a string is Code Your Future", function() {
     const cyf = "Code Your Future";
     let solution = exercises.question1(cyf);
     expect(solution).toEqual(true);
@@ -128,7 +128,7 @@ describe("Module 1 Answers", function() {
     ]);
   });
 
-  xit("Q8 - Tax addition", function() {
+  it("Q8 - Tax addition", function() {
     // tax is 20% of the retail price
     const taxAmount = 0.2;
     const retailPrice = "£10";

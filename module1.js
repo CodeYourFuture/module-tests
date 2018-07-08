@@ -16,7 +16,11 @@
 function question1(name1) {
   if (name1) {
     // TODO:
-    return;
+    var str = name1;
+    var res = str.match(/Code Your Future/g);
+    return true;
+  } else {
+    return false;
   }
 }
 
@@ -28,7 +32,11 @@ function question1(name1) {
 */
 
 function question2(number1, number2) {
-  // TODO:
+  if (number1 == number2) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 /**
@@ -39,7 +47,11 @@ function question2(number1, number2) {
 */
 
 function question3(number) {
-  // TODO:
+  if (number % 2 === 0) {
+    return "even";
+  } else {
+    return "odd";
+  }
 }
 
 /**
@@ -54,7 +66,14 @@ function question3(number) {
 
 function question4(array) {
   // TODO:
-}
+  var newArr = [];
+  for (var i = 0; i < array.length; i = i + 2){
+    newArr.push(array[i]);
+  }
+  return newArr;
+  
+  }
+ 
 
 /**
   Question 5:
@@ -65,6 +84,7 @@ function question4(array) {
 
 function question5(number1, number2) {
   // TODO:
+  return number1 * number2;
 }
 
 /**
@@ -80,7 +100,9 @@ function question5(number1, number2) {
 */
 
 function question6(array) {
+
   // TODO:
+  // return `The array contains ${array.length} animals. These are: ${array[]},${element2},${element3},${element4}.`;
 }
 
 /**
@@ -96,6 +118,9 @@ function question6(array) {
 
 function question7(array1, array2, extraElement) {
   // TODO:
+  var newArr = array1.concat(array2);
+  newArr.push(extraElement);
+  return newArr;
 }
 
 /**
@@ -111,6 +136,10 @@ function question7(array1, array2, extraElement) {
 
 function question8(retailPrice, taxAmount) {
   // TODO:
+  var ret = retailPrice.toCurrency();
+  var salesTax = ret * taxAmount;
+  
+  return salesTax;
 }
 
 module.exports = {
