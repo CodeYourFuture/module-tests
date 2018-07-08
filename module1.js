@@ -7,16 +7,17 @@
 */
 
 /**
-  Question 1
+  Question 1 
   Write a function that compares an input string with "Code Your Future".
   
   Return true if they are the same or false otherwise.
 */
 
-function question1(name1) {
-  if (name1) {
-    // TODO:
-    return;
+function comparesInputString ("Code Your Future") {
+  if (comparesInputString +'are the same') { return true
+     } else {
+    alert(comparesInputString + ' is not valid.');
+    return false;
   }
 }
 
@@ -27,9 +28,15 @@ function question1(name1) {
   Return true if they are equal, or false otherwise.
 */
 
-function question2(number1, number2) {
-  // TODO:
+function comparesTwoInputIntegers(number1, number2) {
+  if (they are equal){
+    return true;
+  } if not{
+    return false;
+  }
 }
+  // TODO:
+
 
 /**
   Question 3:
@@ -38,7 +45,10 @@ function question2(number1, number2) {
   Return a string "odd" if the number is odd, or a string "even" if the number is even.
 */
 
-function question3(number) {
+function checksIfAnInputIntegerIsOddNumberOrEven(5,7) {
+  if (odd) { return a string odd;
+    if (even){return a string even;
+   }
   // TODO:
 }
 
@@ -51,10 +61,10 @@ function question3(number) {
   For example, if the input array is: [1,2,3,4,5,6]
   the output would be: [2,4,6]
 */
-
-function question4(array) {
-  // TODO:
-}
+var arr = [4,5,7,8,14,45,76];
+var filtered = arr.filter(function(element, index, array) {
+  return (index % 2 === 0);
+});
 
 /**
   Question 5:
