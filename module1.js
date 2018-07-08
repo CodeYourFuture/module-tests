@@ -14,9 +14,10 @@
 */
 
 function question1(name1) {
-  if (name1) {
-    // TODO:
-    return;
+  if (name1 === 'Code Your Future') {
+    return true;
+  }else{
+    return false;
   }
 }
 
@@ -28,7 +29,11 @@ function question1(name1) {
 */
 
 function question2(number1, number2) {
-  // TODO:
+  if(number1 === number2){
+    return true;
+  }else{
+    return false;
+  }
 }
 
 /**
@@ -39,7 +44,11 @@ function question2(number1, number2) {
 */
 
 function question3(number) {
-  // TODO:
+  if(number %2 === 0){
+    return "even";
+  }else{
+    return "odd";
+  }
 }
 
 /**
@@ -53,7 +62,9 @@ function question3(number) {
 */
 
 function question4(array) {
-  // TODO:
+  for(var i = 0; array.length > i; i+2){
+      return array[i];
+  }
 }
 
 /**
@@ -64,9 +75,8 @@ function question4(array) {
 */
 
 function question5(number1, number2) {
-  // TODO:
+  return number1 * number2;
 }
-
 /**
   Question 6:
   Write a function that takes an array as input.
@@ -80,7 +90,10 @@ function question5(number1, number2) {
 */
 
 function question6(array) {
-  // TODO:
+  numberOfElements = array.length;
+  for(var i = 0; array.length > i; i++){
+    return array[i];
+  }
 }
 
 /**
@@ -95,7 +108,8 @@ function question6(array) {
 */
 
 function question7(array1, array2, extraElement) {
-  // TODO:
+  var array3  = array1.concat(array2);
+
 }
 
 /**
@@ -110,7 +124,7 @@ function question7(array1, array2, extraElement) {
 */
 
 function question8(retailPrice, taxAmount) {
-  // TODO:
+  return '£' + retailPrice + taxAmount;
 }
 
 module.exports = {
