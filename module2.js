@@ -22,7 +22,18 @@
 
 function question1(personObj) {
   // TODO
-  return /* ??? */;
+  return (
+    "Hi, my name is " +
+    personObj.firstName +" "+
+    personObj.lastName +
+    ". I am " +
+    personObj.age +
+    " years old and work as a " +
+    personObj.occupation +
+    " in " +
+    personObj.location +
+    "."
+  );
 }
 
 /**
@@ -37,7 +48,7 @@ function question1(personObj) {
 
 function question2(carObj) {
   // TODO
-  return /* ??? */
+  return; /* ??? */
 }
 
 /**
@@ -52,7 +63,7 @@ function question2(carObj) {
 
 function question3(dogs) {
   // TODO
-  return /* ??? */
+  return; /* ??? */
 }
 
 /**
@@ -71,7 +82,7 @@ function question3(dogs) {
 function question4() {
   return {
     /* ??? */
-  }
+  };
 }
 
 /**
@@ -99,7 +110,7 @@ function question5() {
 
 function question6(promise) {
   // TODO
-  return /* ??? */
+  return; /* ??? */
 }
 
 /**
@@ -110,7 +121,7 @@ function question6(promise) {
 */
 
 function question7() {
-  return fetch('https://example.com')
+  return fetch("https://example.com");
   // TODO
 }
 
@@ -136,4 +147,4 @@ module.exports = {
   question6,
   question7,
   question8
-}
+};

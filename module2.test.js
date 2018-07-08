@@ -11,7 +11,7 @@ describe('Module 2 Answers', function() {
     global.fetch = globalFetch
   })
 
-  xit('Q1 - Person object', function () {
+  it('Q1 - Person object', function () {
     var person = {
       firstName: 'Sara',
       lastName: 'Marshall',

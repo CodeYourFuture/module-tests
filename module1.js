@@ -14,9 +14,11 @@
 */
 
 function question1(name1) {
-  if (name1) {
+  if (name1 == "Code Your Future") {
     // TODO:
-    return;
+    return true;
+  } else {
+    return false;
   }
 }
 
@@ -29,6 +31,11 @@ function question1(name1) {
 
 function question2(number1, number2) {
   // TODO:
+  if (number1 == number2) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 /**
@@ -40,6 +47,12 @@ function question2(number1, number2) {
 
 function question3(number) {
   // TODO:
+  var odd = "odd";
+  var even = "even";
+  if (number % 2 == 0) {
+    return even;
+  } else;
+  return odd;
 }
 
 /**
@@ -54,6 +67,11 @@ function question3(number) {
 
 function question4(array) {
   // TODO:
+  var j = 0;
+  for (var i = 0; i < array.length; i + 2) {
+    array[j] = array[i];
+    j++;
+  }
 }
 
 /**
@@ -65,6 +83,7 @@ function question4(array) {
 
 function question5(number1, number2) {
   // TODO:
+  return number1 * number2;
 }
 
 /**
@@ -111,6 +130,9 @@ function question7(array1, array2, extraElement) {
 
 function question8(retailPrice, taxAmount) {
   // TODO:
+  var tax;
+  // tax = retailPrice * taxAmount;
+  return retailPrice + retailPrice * taxAmount;
 }
 
 module.exports = {
