@@ -42,6 +42,7 @@ function question2(number1, number2) {
 
 function question3(number) {
   // TODO:
+  return number % 2 !== 0 ? "odd" : "even"
 }
 
 /**

@@ -19,6 +19,7 @@ describe("Module 1 Answers", function() {
     let number1 = 1;
     let number2 = 2;
     solution = exercises.question2(number1, number2);
+    expect.assertions(2)
     expect(solution).toEqual(false);
 
     number1 = 5;
@@ -27,7 +28,7 @@ describe("Module 1 Answers", function() {
     expect(solution).toEqual(true);
   });
 
-  xit("Q3 - Is the number odd or even?", function() {
+  it("Q3 - Is the number odd or even?", function() {
     solution = exercises.question3(3);
     expect(solution).toEqual("odd");
     solution = exercises.question3(14);
