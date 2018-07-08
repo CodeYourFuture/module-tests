@@ -30,6 +30,7 @@ function question1(name1) {
 
 function question2(number1, number2) {
   // TODO:
+  return number1 === number2
 }
 
 /**

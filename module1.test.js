@@ -15,7 +15,7 @@ describe("Module 1 Answers", function() {
     expect(solution).toEqual(false);
   });
 
-  xit("Q2 - Check if two numbers are the same", function() {
+  it("Q2 - Check if two numbers are the same", function() {
     let number1 = 1;
     let number2 = 2;
     solution = exercises.question2(number1, number2);
