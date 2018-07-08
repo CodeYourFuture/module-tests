@@ -22,7 +22,15 @@
 
 function question1(personObj) {
   // TODO
-  return /* ??? */;
+  var firstName = personObj.firstName;
+  var lastName = personObj.lastName;
+  var age = personObj.age;
+  var occupation = personObj.occupation;
+  var location = personObj.location;
+
+  //Don't remember how to do agregattion :/ I repeated the variables
+
+  return `Hi, my name is ${firstName} ${lastName}. I am ${age} years old and work as a ${occupation} in ${location}.`;
 }
 
 /**
@@ -37,7 +45,8 @@ function question1(personObj) {
 
 function question2(carObj) {
   // TODO
-  return /* ??? */
+  carObj.price = 3000;
+  return carObj.sayPrice();
 }
 
 /**
@@ -52,7 +61,10 @@ function question2(carObj) {
 
 function question3(dogs) {
   // TODO
-  return /* ??? */
+  var dog3WeeksOld = dogs.filter(dog => dog.weeksOld > 3);
+  return dogs3WeeksOld.map(dog => dog.name);
+
+  //didn't manage to finish it :/ Couldn't access to the name.
 }
 
 /**
@@ -71,7 +83,7 @@ function question3(dogs) {
 function question4() {
   return {
     /* ??? */
-  }
+  };
 }
 
 /**
@@ -99,7 +111,7 @@ function question5() {
 
 function question6(promise) {
   // TODO
-  return /* ??? */
+  return; /* ??? */
 }
 
 /**
@@ -110,7 +122,7 @@ function question6(promise) {
 */
 
 function question7() {
-  return fetch('https://example.com')
+  return fetch("https://example.com");
   // TODO
 }
 
@@ -136,4 +148,4 @@ module.exports = {
   question6,
   question7,
   question8
-}
+};
