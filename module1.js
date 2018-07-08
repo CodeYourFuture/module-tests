@@ -14,9 +14,11 @@
 */
 
 function question1(name1) {
-  if (name1) {
+  if (name1=== "Code Your Future") {
     // TODO:
-    return;
+    return true;
+  }else {
+    return false;
   }
 }
 
@@ -29,6 +31,11 @@ function question1(name1) {
 
 function question2(number1, number2) {
   // TODO:
+  if (number1 === number2){
+    return true;
+  }else{
+    return false;
+  }
 }
 
 /**
@@ -40,6 +47,8 @@ function question2(number1, number2) {
 
 function question3(number) {
   // TODO:
+    return 
+ 
 }
 
 /**
@@ -52,9 +61,11 @@ function question3(number) {
   the output would be: [2,4,6]
 */
 
-function question4(array) {
+function question4(arr) {
   // TODO:
+  const map = arr.map(x => x+1)
 }
+console.log(map);
 
 /**
   Question 5:
