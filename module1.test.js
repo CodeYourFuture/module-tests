@@ -29,6 +29,7 @@ describe("Module 1 Answers", function() {
   });
 
   it("Q3 - Is the number odd or even?", function() {
+    expect.assertions(2);
     solution = exercises.question3(3);
     expect(solution).toEqual("odd");
     solution = exercises.question3(14);
@@ -89,11 +90,11 @@ describe("Module 1 Answers", function() {
       98,
       100
     ];
-    solution = exercises.question4();
+    solution = exercises.question4(arr);
     expect(solution).toEqual(arr);
   });
 
-  xit("Q5 - Multiply two numbers", function() {
+  it("Q5 - Multiply two numbers", function() {
     let number1 = 6;
     let number2 = 23;
     solution = exercises.question5(number1, number2);

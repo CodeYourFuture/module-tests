@@ -57,6 +57,14 @@ function question3(number) {
 
 function question4(array) {
   // TODO:
+  console.log(array);
+  let newArr = []
+  for (let i = 0; i < array.length; i++){
+    newArr.push(array[i])
+  }
+  console.log(newArr)
+  return newArr
+  // array.map((ele, index) => )
 }
 
 /**
@@ -68,6 +76,7 @@ function question4(array) {
 
 function question5(number1, number2) {
   // TODO:
+  return number1 * number2
 }
 
 /**
