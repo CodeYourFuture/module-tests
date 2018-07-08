@@ -57,17 +57,22 @@ describe("Module 1 Answers", function() {
 
   xit("Q6 - Animals array", function() {
     const animals = ["lions", "tigers", "bears"];
+
     solution = exercises.question6(animals);
+
     expect(solution).toEqual(
       "The array contains 3 animals. These are: lions,tigers,bears."
     );
+    expect(animals).toEqual(["lions", "tigers", "bears"]);
   });
 
   xit("Q7 - Array concatenation", function() {
     const array1 = ["lions", "tigers", "bears"];
     const array2 = ["penguins", "flamingoes", "eagles"];
     const extra = "cobras";
+
     solution = exercises.question7(array1, array2, extra);
+
     expect(solution).toEqual([
       "lions",
       "tigers",
@@ -77,6 +82,8 @@ describe("Module 1 Answers", function() {
       "eagles",
       "cobras"
     ]);
+    expect(array1).toEqual(["lions", "tigers", "bears"]);
+    expect(array2).toEqual(["penguins", "flamingoes", "eagles"]);
   });
 
   xit("Q8 - Tax addition", function() {
