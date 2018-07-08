@@ -105,6 +105,10 @@ function question4() {
 
 function question5() {
   // TODO
+  let btn = document.querySelector("#btn")
+  btn.addEventListener('click', () => {
+    document.querySelector("#change-me").style = 'blue'
+  })
 }
 
 /**
