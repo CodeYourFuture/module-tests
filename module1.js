@@ -14,10 +14,11 @@
 */
 
 function question1(name1) {
-  if (name1) {
+  if (name1 === "Code Your Future") {
     // TODO:
-    return;
+    return true;
   }
+  return false;
 }
 
 /**
