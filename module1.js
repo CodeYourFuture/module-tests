@@ -112,8 +112,11 @@ function question6(array) {
 
 function question7(array1, array2, extraElement) {
   // TODO:
+  let newArr = array1.concat(array2)
+  console.log('testing...',newArr)
+  newArr.push(extraElement)
+  return newArr
 }
-
 /**
   Question 8:
   Write a function that calculates a price with added tax.
@@ -127,6 +130,8 @@ function question7(array1, array2, extraElement) {
 
 function question8(retailPrice, taxAmount) {
   // TODO:
+  let splitedArray = retailPrice.split('£')
+  return '£'+Number(splitedArray[1]) * (1 + taxAmount);
 }
 
 module.exports = {

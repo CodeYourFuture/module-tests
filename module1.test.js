@@ -114,7 +114,7 @@ describe("Module 1 Answers", function() {
     );
   });
 
-  xit("Q7 - Array concatenation", function() {
+  it("Q7 - Array concatenation", function() {
     const array1 = ["lions", "tigers", "bears"];
     const array2 = ["penguins", "flamingoes", "eagles"];
     const extra = "cobras";
@@ -130,7 +130,7 @@ describe("Module 1 Answers", function() {
     ]);
   });
 
-  xit("Q8 - Tax addition", function() {
+  it("Q8 - Tax addition", function() {
     // tax is 20% of the retail price
     const taxAmount = 0.2;
     const retailPrice = "£10";

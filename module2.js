@@ -22,7 +22,17 @@
 
 function question1(personObj) {
   // TODO
-  return /* ??? */;
+  const {
+    firstName,
+    lastName,
+    age,
+    occupation,
+    location
+
+  } = personObj
+  return `Hi, my name is ${firstName} ${lastName}. I am ${age} years old and work as a ${occupation} in ${location}.`
+
+
 }
 
 /**
@@ -37,8 +47,7 @@ function question1(personObj) {
 
 function question2(carObj) {
   // TODO
-  return /* ??? */
-}
+  }
 
 /**
   Question 3:
