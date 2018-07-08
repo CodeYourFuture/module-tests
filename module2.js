@@ -47,7 +47,9 @@ function question1(personObj) {
 
 function question2(carObj) {
   // TODO
-  }
+  carObj.price = 3000;
+  return carObj.sayPrice()
+}
 
 /**
   Question 3:
@@ -61,7 +63,13 @@ function question2(carObj) {
 
 function question3(dogs) {
   // TODO
-  return /* ??? */
+  let newArr =[];
+   dogs.map(dog => {
+    if (dog.weeksOld > 3){
+      newArr.push(dog.name)
+    }
+  })
+  return newArr
 }
 
 /**

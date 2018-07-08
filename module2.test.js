@@ -23,7 +23,7 @@ describe('Module 2 Answers', function() {
     expect(solution).toEqual('Hi, my name is Sara Marshall. I am 25 years old and work as a dentist in Warrington.');
   });
 
-  xit('Q2 - Car object updating', function() {
+  it('Q2 - Car object updating', function() {
     var car = {
       make: 'Ford',
       model: 'Fiesta',
@@ -36,7 +36,7 @@ describe('Module 2 Answers', function() {
     expect(solution).toEqual('The price is 3000');
   });
 
-  xit('Q3 - Filtering and mapping array of dogs', function() {
+  it('Q3 - Filtering and mapping array of dogs', function() {
     var dogs = [{
       name: 'Lassy',
       weeksOld: 2
@@ -52,7 +52,7 @@ describe('Module 2 Answers', function() {
     expect(solution).toEqual(['Chewie', 'Scout']);
   });
 
-  xit('Q4 - Selecting classes and ids', function() {
+  it('Q4 - Selecting classes and ids', function() {
     var root = document.createElement('div');
     root.id = 'root';
     var wrapper = document.createElement('div');
