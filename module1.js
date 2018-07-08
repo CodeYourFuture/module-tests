@@ -13,10 +13,13 @@
   Return true if they are the same or false otherwise.
 */
 
+var name = "Code Your Future"
 function question1(name1) {
-  if (name1) {
+  if (name1 === "Code Your Future") {  
     // TODO:
-    return;
+    return true;
+  }else{ 
+    return false;
   }
 }
 
@@ -27,9 +30,18 @@ function question1(name1) {
   Return true if they are equal, or false otherwise.
 */
 
+let number1 = 1;
+let number2 = 2;
 function question2(number1, number2) {
-  // TODO:
+if (number1 === 1 && number2 === 2) {
+  return true;
+} else {
+  return false;
+
 }
+}
+  // TODO:
+
 
 /**
   Question 3:
@@ -39,6 +51,8 @@ function question2(number1, number2) {
 */
 
 function question3(number) {
+
+
   // TODO:
 }
 
@@ -51,8 +65,12 @@ function question3(number) {
   For example, if the input array is: [1,2,3,4,5,6]
   the output would be: [2,4,6]
 */
+var number = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 function question4(array) {
+  for (var i = 0; i < array.length; i ++) {
+    return array[i];
+  }
   // TODO:
 }
 
@@ -64,6 +82,8 @@ function question4(array) {
 */
 
 function question5(number1, number2) {
+  return 2 * 3;
+
   // TODO:
 }
 
