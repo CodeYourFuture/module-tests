@@ -87,7 +87,8 @@ function question3(dogs) {
 
 function question4() {
   return {
-    /* ??? */
+    id: document.querySelector('#root'),
+    class: document.querySelector('.wrapper')
   }
 }
 
