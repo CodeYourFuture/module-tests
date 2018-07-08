@@ -109,8 +109,9 @@ function question6(array) {
 */
 
 function question7(array1, array2, extraElement) {
-  var addArray = array1.concat(array2);
-  var newArray = addArray.push("");
+  twoArrays = array1.concat(array2);
+  twoArrays.push(extraElement);
+  return twoArrays;
 }
 
 /**
