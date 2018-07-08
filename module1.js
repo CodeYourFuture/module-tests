@@ -14,9 +14,10 @@
 */
 
 function question1(name1) {
-  if (name1) {
-    // TODO:
-    return;
+  if (name1 === "Code Your Future") {
+    return true;
+  } else {
+    return false;
   }
 }
 
@@ -28,7 +29,11 @@ function question1(name1) {
 */
 
 function question2(number1, number2) {
-  // TODO:
+  if (number1 == number2 || number2 == number1) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 /**
@@ -40,6 +45,12 @@ function question2(number1, number2) {
 
 function question3(number) {
   // TODO:
+
+  if (number % 2 === 0) {
+    return "even";
+  } else {
+    return "odd";
+  }
 }
 
 /**
@@ -54,6 +65,10 @@ function question3(number) {
 
 function question4(array) {
   // TODO:
+  var newArray = [];
+  for (i = 0; i < array.length; i + 2) {
+    return newArray.push(array[i]);
+  }
 }
 
 /**
@@ -65,6 +80,7 @@ function question4(array) {
 
 function question5(number1, number2) {
   // TODO:
+  return number1 * number2;
 }
 
 /**
@@ -81,6 +97,9 @@ function question5(number1, number2) {
 
 function question6(array) {
   // TODO:
+  var longitud = array.length;
+  var listAnimals = array.join(",");
+  return `The array contains ${longitud} animals. These are: ${listAnimals}.`;
 }
 
 /**
@@ -96,6 +115,9 @@ function question6(array) {
 
 function question7(array1, array2, extraElement) {
   // TODO:
+  var twoArrays = [...array1, ...array2];
+  twoArrays.push(extraElement);
+  return twoArrays;
 }
 
 /**
@@ -111,6 +133,10 @@ function question7(array1, array2, extraElement) {
 
 function question8(retailPrice, taxAmount) {
   // TODO:
+  var taxTotal = retailPrice * taxAmount;
+  var result = retailPrice.split();
+  //Not sure how to remove the currency symbol, tried to split the string and extract the currency symbol, store it in
+  //another variable, sum the price and the taxamount and later with join trying to add the currency symbol.
 }
 
 module.exports = {
