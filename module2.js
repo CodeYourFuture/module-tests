@@ -121,7 +121,7 @@ function question5() {
 
 function question6(promise) {
   // TODO
-  return /* ??? */
+  return promise.then(msg => "I love " + msg);
 }
 
 /**
@@ -132,7 +132,7 @@ function question6(promise) {
 */
 
 function question7() {
-  return fetch('https://example.com')
+  return fetch('https://example.com').then(res => res.json()).then(msg => msg)
   // TODO
 }
 

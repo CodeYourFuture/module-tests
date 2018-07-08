@@ -66,7 +66,7 @@ describe('Module 2 Answers', function() {
     expect(solution.class).toEqual(wrapper);
   });
 
-  xit('Q5 - Event listener', function() {
+  it('Q5 - Event listener', function() {
     var changeMe = document.createElement('div');
     changeMe.id = 'change-me';
     var button = document.createElement('button');
@@ -81,7 +81,7 @@ describe('Module 2 Answers', function() {
     expect(changeMe.style.backgroundColor).toEqual('blue');
   });
 
-  xit('Q6 - Promise', function() {
+  it('Q6 - Promise', function() {
     var promise = Promise.resolve('CYF!');
 
     var solution = exercises.question6(promise);
