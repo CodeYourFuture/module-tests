@@ -14,9 +14,11 @@
 */
 
 function question1(name1) {
-  if (name1) {
+  if (name1== "Code Your Future") {
     // TODO:
-    return;
+    return true;
+  }else if(name1=="Something else"){
+   return false;
   }
 }
 
@@ -28,6 +30,12 @@ function question1(name1) {
 */
 
 function question2(number1, number2) {
+  if(number1!= number2){
+    return false;
+  } else if(number1== number2 ){
+return true;
+  }
+  
   // TODO:
 }
 
@@ -40,6 +48,13 @@ function question2(number1, number2) {
 
 function question3(number) {
   // TODO:
+  
+  if(number%2==0){
+    return "even";
+
+  }else{
+    return "odd"
+  }
 }
 
 /**
@@ -65,6 +80,7 @@ function question4(array) {
 
 function question5(number1, number2) {
   // TODO:
+  return number1*number2;
 }
 
 /**
@@ -80,6 +96,8 @@ function question5(number1, number2) {
 */
 
 function question6(array) {
+
+ 
   // TODO:
 }
 
