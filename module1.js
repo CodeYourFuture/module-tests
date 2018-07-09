@@ -14,9 +14,12 @@
 */
 
 function question1(name1) {
-  // TODO:
-}
-
+ if(name1 === "Code Your Future") {
+        return true;// TODO:
+    }else{
+        return false;
+    }
+  }
 /**
   Question 2:
   Write a function that compares two input integers.
@@ -25,9 +28,12 @@ function question1(name1) {
 */
 
 function question2(number1, number2) {
-  // TODO:
-}
-
+    if(number1 == number2) {
+       return true;// TODO:
+    }else{
+       return false;
+    }
+  }
 /**
   Question 3:
   Write a function that checks if an input integer is an even or an odd number.
@@ -36,9 +42,12 @@ function question2(number1, number2) {
 */
 
 function question3(number) {
-  // TODO:
-}
-
+     if(number % 2 == 0) {
+           return "even";// TODO:
+       }else{
+           return "odd";
+       }
+      }
 /**
   Question 4:
   Write a function that takes an array of integers as input, and returns an array containing only every second element.
@@ -50,6 +59,14 @@ function question3(number) {
 */
 
 function question4(array) {
+  for (i = 0; i < array.length; i++) {
+  arr[i] = array[i].filter(function (value, index, ar) {
+    if (i % 2 == 0) { 
+        return true;
+      }
+    return false;
+  });
+}
   // TODO:
 }
 
