@@ -14,10 +14,7 @@
 */
 
 function question1(name1) {
-  if (name1) {
-    // TODO:
-    return;
-  }
+  // TODO:
 }
 
 /**

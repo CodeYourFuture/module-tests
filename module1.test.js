@@ -35,61 +35,12 @@ describe("Module 1 Answers", function() {
   });
 
   xit("Q4 - Returns an array containing only every second number", function() {
-    const arr = [
-      0,
-      2,
-      4,
-      6,
-      8,
-      10,
-      12,
-      14,
-      16,
-      18,
-      20,
-      22,
-      24,
-      26,
-      28,
-      30,
-      32,
-      34,
-      36,
-      38,
-      40,
-      42,
-      44,
-      46,
-      48,
-      50,
-      52,
-      54,
-      56,
-      58,
-      60,
-      62,
-      64,
-      66,
-      68,
-      70,
-      72,
-      74,
-      76,
-      78,
-      80,
-      82,
-      84,
-      86,
-      88,
-      90,
-      92,
-      94,
-      96,
-      98,
-      100
-    ];
-    solution = exercises.question4();
-    expect(solution).toEqual(arr);
+    const arr = [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20];
+
+    solution = exercises.question4(arr);
+
+    expect(solution).toEqual([2, 6, 10, 14, 18]);
+    expect(arr).toEqual([0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20]);
   });
 
   xit("Q5 - Multiply two numbers", function() {
@@ -106,17 +57,22 @@ describe("Module 1 Answers", function() {
 
   xit("Q6 - Animals array", function() {
     const animals = ["lions", "tigers", "bears"];
+
     solution = exercises.question6(animals);
+
     expect(solution).toEqual(
       "The array contains 3 animals. These are: lions,tigers,bears."
     );
+    expect(animals).toEqual(["lions", "tigers", "bears"]);
   });
 
   xit("Q7 - Array concatenation", function() {
     const array1 = ["lions", "tigers", "bears"];
     const array2 = ["penguins", "flamingoes", "eagles"];
     const extra = "cobras";
+
     solution = exercises.question7(array1, array2, extra);
+
     expect(solution).toEqual([
       "lions",
       "tigers",
@@ -126,6 +82,8 @@ describe("Module 1 Answers", function() {
       "eagles",
       "cobras"
     ]);
+    expect(array1).toEqual(["lions", "tigers", "bears"]);
+    expect(array2).toEqual(["penguins", "flamingoes", "eagles"]);
   });
 
   xit("Q8 - Tax addition", function() {
