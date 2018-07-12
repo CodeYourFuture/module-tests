@@ -61,15 +61,13 @@ function question3(number) {
   For example, if the input array is: [1,2,3,4,5,6]
   the output would be: [2,4,6]
 */
-
-var second = function question4(array) {
-
-  for (i = 0; i < array.length - 1; i += 2) {
-    return array[i]
+function question4(array) {
+  var result = []
+  for (i = 0; i < array.length; i += 1) {
+    result.push(array[i])
   }
-
+  return result;
 }
-
 /**
   Question 5:
   Write a function that multiplies two input numbers (positive or negative).
@@ -97,14 +95,13 @@ function question5(number1, number2) {
   The output string should be in the following format:
   "The array contains {number of elements} animals. These are: {element1},{element2},{element3},{element4}."
 */
-const animals = ["lions", "tigers", "bears"];
-function question6(array) {
-  var length = array.length
-  var animalList = {};
-  animalList.push().toString(animals);
-  //still need to work it out
 
-  return `The array contains ${length} animals. These are:${animalList}.`
+function question6(array) {
+  var length = array.length;
+  var animals = array.map(element => element)
+
+
+  return `The array contains ${length} animals. These are: ${animals}.`
 }
 
 /**
@@ -120,7 +117,8 @@ function question6(array) {
 
 function question7(array1, array2, extraElement) {
   var join = array1.concat(array2);
-  var extraAdd = join.push(extraElement);
+  join.push(extraElement)
+  return join
 }
 
 /**
@@ -135,8 +133,14 @@ function question7(array1, array2, extraElement) {
 */
 
 function question8(retailPrice, taxAmount) {
-  // TODO:
+
+  var seperate = retailPrice.slice(1);
+  var stringToInt = parseInt(seperate, 10)
+  var addTax = stringToInt * taxAmount;
+  var final = stringToInt + addTax
+  return "£" + final.toString()
 }
+
 
 module.exports = {
   question1,

@@ -88,7 +88,7 @@ describe("Module 1 Answers", function () {
       98,
       100
     ];
-    solution = exercises.question4();
+    solution = exercises.question4(arr);
     expect(solution).toEqual(arr);
   });
 
