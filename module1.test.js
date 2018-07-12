@@ -34,7 +34,7 @@ describe("Module 1 Answers", function() {
     expect(solution).toEqual("even");
   });
 
-  xit("Q4 - Returns an array containing only every second number", function() {
+  it("Q4 - Returns an array containing only every second number", function() {
     const arr = [
       0,
       2,
@@ -88,7 +88,7 @@ describe("Module 1 Answers", function() {
       98,
       100
     ];
-    solution = exercises.question4();
+    solution = exercises.question4(arr);
     expect(solution).toEqual(arr);
   });
 
@@ -128,7 +128,7 @@ describe("Module 1 Answers", function() {
     ]);
   });
 
-  xit("Q8 - Tax addition", function() {
+  it("Q8 - Tax addition", function() {
     // tax is 20% of the retail price
     const taxAmount = 0.2;
     const retailPrice = "£10";

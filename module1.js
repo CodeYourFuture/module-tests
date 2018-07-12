@@ -14,10 +14,13 @@
 */
 
 function question1(name1) {
-  if (name1 === "Code Your Future") {
-    return true;
-  } else return false;
+  return name1 === "Code Your Future" ? true : false;
 }
+
+//   if (name1 === "") {
+//     return true;
+//   } else return false;
+// }
 
 /**
   Question 2:
@@ -27,11 +30,13 @@ function question1(name1) {
 */
 
 function question2(number1, number2) {
-  if (number1 === number2) {
-    return true;
-  } else return false;
-  // TODO:
+  return number1 === number2 ? true : false;
 }
+//   if (number1 === number2) {
+//     return true;
+//   } else return false;
+//   // TODO:
+// }
 
 /**
   Question 3:
@@ -41,9 +46,9 @@ function question2(number1, number2) {
 */
 
 function question3(number) {
-  if (number % 2 === 0) {
-    return "even";
-  } else return "odd";
+  return number % 2 === 0 ? "even" : "odd";
+  //   return "even";
+  // } else return "odd";
 }
 /**
   Question 4:
@@ -55,8 +60,12 @@ function question3(number) {
   the output would be: [2,4,6]
 */
 
-function question4(array) {
-  return array.map(item => item + 1);
+function question4(a) {
+  var array = [];
+  for (var i = 0; i < a.length; i += 1) {
+    array.push(a[i]);
+  }
+  return array;
 }
 
 /**
@@ -84,17 +93,8 @@ function question5(number1, number2) {
 
 function question6(array) {
   var sum = array.length;
-  return (
-    "The array contains " +
-    sum +
-    " animals. These are: " +
-    array[0] +
-    "," +
-    array[1] +
-    "," +
-    array[2] +
-    "."
-  );
+  var splitedArr = array.join();
+  return `The array contains ${sum} animals. These are: ${splitedArr}.`;
 }
 
 /**
@@ -109,7 +109,7 @@ function question6(array) {
 */
 
 function question7(array1, array2, extraElement) {
-  twoArrays = array1.concat(array2);
+  var twoArrays = array1.concat(array2);
   twoArrays.push(extraElement);
   return twoArrays;
 }
@@ -126,6 +126,11 @@ function question7(array1, array2, extraElement) {
 */
 
 function question8(retailPrice, taxAmount) {
+  retailPrice = retailPrice.substring(1);
+  var retailPriceToNumber = parseInt(retailPrice, 10); //coverting retail price to number inorder to multiply.
+  var calculatedTaxOnPrice = (taxAmount / 10) * 100;
+  return `£${retailPriceToNumber + calculatedTaxOnPrice}`;
+  //return `£${retailPrice + calculatedTaxOnPrice}`;
   // TODO:
 }
 
