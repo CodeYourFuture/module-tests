@@ -14,8 +14,16 @@
 */
 
 function question1(name1) {
-  // TODO:
-}
+  
+  if (name1 === "Code Your Future") {
+      return true;
+    } else {
+      return false;
+    }
+  }
+ 
+// TODO:
+
 
 /**
   Question 2:
@@ -25,7 +33,14 @@ function question1(name1) {
 */
 
 function question2(number1, number2) {
-  // TODO:
+  {
+    if (Number.isInteger(number1 / number2)) {
+      return true;
+    }
+    return false;
+  }
+  console.log(fits(5, 10));
+ // TODO:
 }
 
 /**
@@ -36,12 +51,19 @@ function question2(number1, number2) {
 */
 
 function question3(number) {
-  // TODO:
+   {
+    if (number % 2 == 0)
+      return "even";
+    else
+      return "odd";
+      
+  }// TODO:
 }
 
 /**
   Question 4:
-  Write a function that takes an array of integers as input, and returns an array containing only every second element.
+  Write a function that takes an array of integers as input, and returns an array containing 
+  only every second element.
 
   Use any array iteration methods known to you.
   
@@ -73,7 +95,8 @@ function question5(number1, number2) {
   - a list of all elements in the array
 
   The output string should be in the following format:
-  "The array contains {number of elements} animals. These are: {element1},{element2},{element3},{element4}."
+  "The array contains {number of elements} animals. These are: {element1},{element2},{element3},
+  {element4}."
 */
 
 function question6(array) {
@@ -100,7 +123,8 @@ function question7(array1, array2, extraElement) {
   Write a function that calculates a price with added tax.
 
   The inputs are:
-   - a string containing the currency and an integer, float, either negative or positive. For example "£34.59"
+   - a string containing the currency and an integer, float, either negative or positive. For example 
+   "£34.59"
    - an integer or float representing the tax amount
 
   The output should be a string, that represents the calculated price with the currency symbol.
