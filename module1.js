@@ -56,9 +56,10 @@ function question3(number) {
 function question4(array) {
   // TODO:
   var newArray = [];
-  for (i = 0; i < array.length; i + 2) {
-    return newArray.push(array[i]);
+  for (i = 0; i < array.length; i += 2) {
+    newArray.push(array[i]);
   }
+  return newArray;
 }
 
 /**
