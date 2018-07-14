@@ -32,7 +32,9 @@ describe('Module 2 Answers', function() {
         return 'The price is ' + this.price
       }
     };
-    spyOn(car, 'sayPrice').and.callThrough();
+    // This lets us test whether this method actually got called by the
+    // implementation. We "spy on" it to watch for any interactions.
+    jest.spyOn(car, 'sayPrice');
 
     var solution = exercises.question2(car);
 
