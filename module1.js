@@ -128,7 +128,16 @@ function question7(array1, array2, extraElement) {
 function question8(retailPrice, taxAmount) {
   retailPrice = retailPrice.substring(1);
   var retailPriceToNumber = parseInt(retailPrice, 10); //coverting retail price to number inorder to multiply.
-  var calculatedTaxOnPrice = (taxAmount / 10) * 100;
+  var calculatedTaxOnPrice = taxAmount * retailPriceToNumber;
+  return `£${retailPriceToNumber + calculatedTaxOnPrice}`;
+  //return `£${retailPrice + calculatedTaxOnPrice}`;
+  // TODO:
+}
+
+function question9(retailPrice, taxAmount) {
+  retailPrice = retailPrice.substring(1);
+  var retailPriceToNumber = parseInt(retailPrice, 10); //coverting retail price to number inorder to multiply.
+  var calculatedTaxOnPrice = taxAmount * retailPriceToNumber;
   return `£${retailPriceToNumber + calculatedTaxOnPrice}`;
   //return `£${retailPrice + calculatedTaxOnPrice}`;
   // TODO:
@@ -142,5 +151,6 @@ module.exports = {
   question5,
   question6,
   question7,
-  question8
+  question8,
+  question9
 };

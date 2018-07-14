@@ -22,7 +22,11 @@
 
 function question1(personObj) {
   // TODO
-  return /* ??? */;
+  return `Hi, my name is ${personObj.firstName} ${personObj.lastName}. I am ${
+    personObj.age
+  } years old and work as a
+  ${personObj.occupation} in ${personObj.location}.`;
+  /* ??? */
 }
 
 /**
@@ -36,8 +40,10 @@ function question1(personObj) {
 */
 
 function question2(carObj) {
+  carObj.price = 3000;
   // TODO
-  return /* ??? */
+  return carObj.sayPrice();
+  /* ??? */
 }
 
 /**
@@ -51,8 +57,9 @@ function question2(carObj) {
 */
 
 function question3(dogs) {
-  // TODO
-  return /* ??? */
+  const dogsOver3WeeksOld = dogs.filter(dog => dog.weeksOld > 3);
+  const dogNamesOver3WeeksOld = dogsOver3WeeksOld.map(dog => dog.name);
+  return dogNamesOver3WeeksOld; /* ??? */
 }
 
 /**
@@ -69,9 +76,12 @@ function question3(dogs) {
 */
 
 function question4() {
+  const newId = document.querySelector("#root");
+  const newClass = document.querySelector(".wrapper");
   return {
-    /* ??? */
-  }
+    id: newId,
+    class: newClass
+  };
 }
 
 /**
@@ -86,7 +96,10 @@ function question4() {
 */
 
 function question5() {
-  // TODO
+  var button1 = document.querySelector("#btn");
+  button1.addEventListener("click", () => {
+    document.querySelector("#change-me").style.backgroundColor = "blue";
+  });
 }
 
 /**
@@ -96,10 +109,10 @@ function question5() {
   the string: "I love " before the value from the Promise. Finally it should
   return the Promise so chaining can continue.
 */
-
 function question6(promise) {
-  // TODO
-  return /* ??? */
+  return promise.then(value => {
+    "I love " + value;
+  });
 }
 
 /**
@@ -110,8 +123,9 @@ function question6(promise) {
 */
 
 function question7() {
-  return fetch('https://example.com')
-  // TODO
+  return fetch("https://example.com").then(function(response) {
+    return response.text();
+  });
 }
 
 /**
@@ -124,7 +138,13 @@ function question7() {
 */
 
 function question8() {
-  // TODO
+  fetch("https://example.com", {
+    method: "POST",
+    body: {},
+    headers: {
+      "Content-Type": "application/json"
+    }
+  });
 }
 
 module.exports = {
@@ -136,4 +156,4 @@ module.exports = {
   question6,
   question7,
   question8
-}
+};

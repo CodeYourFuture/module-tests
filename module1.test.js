@@ -135,4 +135,12 @@ describe("Module 1 Answers", function() {
     solution = exercises.question8(retailPrice, taxAmount);
     expect(solution).toEqual("£12");
   });
+
+  it("Q9 - Tax addition", function() {
+    // tax is 20% of the retail price
+    const taxAmount = 0.2;
+    const retailPrice = "£20";
+    solution = exercises.question8(retailPrice, taxAmount);
+    expect(solution).toEqual("£24");
+  });
 });
