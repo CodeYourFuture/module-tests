@@ -62,7 +62,7 @@ function question2(carObj) {
 function question3(dogs) {
   // TODO
   var dog3WeeksOld = dogs.filter(dog => dog.weeksOld > 3);
-  return dogs3WeeksOld.map(dog => dog.name);
+  return dog3WeeksOld.map(dog => dog.name);
 
   //didn't manage to finish it :/ Couldn't access to the name.
 }
