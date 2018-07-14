@@ -14,11 +14,7 @@
 */
 
 function question1(name1) {
-  if (name1 === "Code Your Future") {
-    return true;
-  } else {
-    return false;
-  }
+  return name1 === "Code Your Future";
 }
 
 /**
