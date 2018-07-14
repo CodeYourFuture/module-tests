@@ -24,9 +24,7 @@ function question1(name1) {
   Return true if they are equal, or false otherwise.
 */
 
-function question2(number1, number2) {
-  return number1 === number2;
-}
+const question2 = (number1, number2) => number1 === number2;
 
 /**
   Question 3:
