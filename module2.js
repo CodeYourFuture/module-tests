@@ -21,9 +21,20 @@
 */
 
 function question1(personObj) {
-  // TODO
-  return /* ??? */;
+  const {
+    firstName,
+    lastName,
+    age,
+    occupation,
+    location
+
+  } = personObj
+  return `Hi, my name is ${firstName} ${lastName}. I am ${age} years old and work as a ${occupation} in ${location}.`
+
+
 }
+
+
 
 /**
   Question 2:
@@ -36,8 +47,8 @@ function question1(personObj) {
 */
 
 function question2(carObj) {
-  // TODO
-  return /* ??? */
+  carObj.price = 3000;
+  return 'The price is ' + carObj.price;
 }
 
 /**
@@ -51,8 +62,13 @@ function question2(carObj) {
 */
 
 function question3(dogs) {
-  // TODO
-  return /* ??? */
+  let result = []
+  dogs.map(dog => {
+    if (dog.weeksOld > 3) {
+      result.push(dog.name)
+    }
+  })
+  return result;
 }
 
 /**
@@ -70,7 +86,9 @@ function question3(dogs) {
 
 function question4() {
   return {
-    /* ??? */
+    id: document.querySelector("#root"),
+    class: document.querySelector(".wrapper")
+
   }
 }
 
@@ -78,7 +96,7 @@ function question4() {
   Question 5:
   Write a function that creates a click event listener on the `#btn` element.
 
-  The event listener should change the background color of the `#change-me`
+  The event listener should change the background color of the `#change - me`
   element to `blue` when the button is clicked.
 
   NOTE: we have set up the tests so that all of the DOM objects & methods are
@@ -86,7 +104,11 @@ function question4() {
 */
 
 function question5() {
-  // TODO
+  let button = document.querySelector("#btn");
+  let changeMe = document.querySelector("#change-me");
+  button.addEventListener("click", () => {
+    changeMe.style.backgroundColor = "blue";
+  })
 }
 
 /**
@@ -98,8 +120,10 @@ function question5() {
 */
 
 function question6(promise) {
-  // TODO
-  return /* ??? */
+  return promise.then(function () {
+    "Ilove" + value
+  })
+
 }
 
 /**
@@ -111,7 +135,9 @@ function question6(promise) {
 
 function question7() {
   return fetch('https://example.com')
-  // TODO
+    .then((response) => {
+      return response.text();
+    })
 }
 
 /**
@@ -124,7 +150,12 @@ function question7() {
 */
 
 function question8() {
-  // TODO
+  fetch('https://example.com', {
+    method: 'POST',
+    headers: {
+      "Content-Type": "application/json"
+    }
+  })
 }
 
 module.exports = {
