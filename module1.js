@@ -88,9 +88,9 @@ function question5(number1, number2) {
 
 function question6(array) {
   // TODO:
-  var longitud = array.length;
+  var numberElements = array.length;
   var listAnimals = array.join(",");
-  return `The array contains ${longitud} animals. These are: ${listAnimals}.`;
+  return `The array contains ${numberElements} animals. These are: ${listAnimals}.`;
 }
 
 /**
