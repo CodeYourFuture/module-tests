@@ -25,11 +25,7 @@ function question1(name1) {
 */
 
 function question2(number1, number2) {
-  if (number1 == number2 || number2 == number1) {
-    return true;
-  } else {
-    return false;
-  }
+  return number1 === number2;
 }
 
 /**
