@@ -124,10 +124,10 @@ function question7(array1, array2, extraElement) {
 
 function question8(retailPrice, taxAmount) {
   // TODO:
-  var taxTotal = retailPrice * taxAmount;
-  var result = retailPrice.split();
-  //Not sure how to remove the currency symbol, tried to split the string and extract the currency symbol, store it in
-  //another variable, sum the price and the taxamount and later with join trying to add the currency symbol.
+  var currency = retailPrice.substring(0, 1);
+  var priceNoCurrency = parseInt(retailPrice.substring(1));
+  var total = (priceNoCurrency + priceNoCurrency * taxAmount).toString();
+  return `${currency}${total}`;
 }
 
 module.exports = {
