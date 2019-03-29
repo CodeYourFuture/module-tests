@@ -1,12 +1,10 @@
 import os
 
 def grab_section(name, q_num):
-    lines = os.popen("awk '/* Question %d/,/Question %d/' submissions/%s | head -n-1" % ( q_num, q_num+1, name )).read()
-    return lines
+    return os.popen("awk '/* Question %d/,/Question %d/' submissions/%s | head -n-1" % ( q_num, q_num+1, name )).read()
 
 def grab_last_section(name):
-    lines = os.popen("awk '/* Question 9/,/module/' submissions/%s | head -n-1" % name).read()
-    return lines
+    return os.popen("awk '/* Question 9/,/module/' submissions/%s | head -n-1" % name).read()
     
 data = {}
 order = []
