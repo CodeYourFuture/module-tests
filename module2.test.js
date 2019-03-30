@@ -32,8 +32,15 @@ describe('Module 2 Answers', function() {
         return 'The price is ' + this.price
       }
     };
+    // This lets us test whether this method actually got called by the
+    // implementation. We "spy on" it to watch for any interactions.
+    jest.spyOn(car, 'sayPrice');
+
     var solution = exercises.question2(car);
+
     expect(solution).toEqual('The price is 3000');
+    expect(car.price).toEqual(3000);
+    expect(car.sayPrice).toHaveBeenCalled();
   });
 
   xit('Q3 - Filtering and mapping array of dogs', function() {
@@ -86,7 +93,7 @@ describe('Module 2 Answers', function() {
 
     var solution = exercises.question6(promise);
 
-    solution.then(function(value) {
+    return solution.then(function (value) {
       expect(value).toEqual('I love CYF!')
     });
   });
@@ -108,8 +115,8 @@ describe('Module 2 Answers', function() {
 
     var solution = exercises.question7();
 
-    solution.then(function(value) {
-      expect(value).toEqual('Olá!')
+    return solution.then(function (value) {
+      expect(value).toEqual('Olá!');
     });
   });
 
