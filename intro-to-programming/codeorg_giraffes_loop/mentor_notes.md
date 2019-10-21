@@ -13,9 +13,9 @@ This task is an opportunity to assess some/all of the following:
 * Attention to detail: student looks for, finds detail differences between the target image and her own result.
 * Communication during task: (this may depend on whether it's truly a pairing task or whether we're just observing the student do the task.)
 
-# Presenting yourself and the task
+# TODO: Presenting yourself and the task
 
-* TODO: are we asking to observe the student and their thought process during this task, or are we truly pairing?  What will be our contribution A) in the case the student can clearly do it all themselves?  B) in the case the student is lost?
+(Are we asking to observe the student and their thought process during this task, or are we truly pairing?  What will be our contribution A) in the case the student can clearly do it all themselves?  B) in the case the student is lost?)
 
 # TODO: rubric
 
