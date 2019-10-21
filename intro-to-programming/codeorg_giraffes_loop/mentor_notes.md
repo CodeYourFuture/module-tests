@@ -11,6 +11,11 @@ This task is an opportunity to assess some/all of the following:
 * Playing computer: Student thinks through the sequence of necessary steps (It may be that the student just plays with the block order until they land on the right solution, this is ok).
 * Exploration: how does the student deal with not being handed *everything*?  The perfect solution requires a block called jump that they won't have used much before.  Do they look for it?  Are they helpless?
 * Attention to detail: student looks for, finds detail differences between the target image and her own result.
+* Communication during task: (this may depend on whether it's truly a pairing task or whether we're just observing the student do the task.)
+
+# Presenting yourself and the task
+
+* TODO: are we asking to observe the student and their thought process during this task, or are we truly pairing?  What will be our contribution A) in the case the student can clearly do it all themselves?  B) in the case the student is lost?
 
 # TODO: rubric
 
