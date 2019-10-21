@@ -37,6 +37,9 @@ add a rubric based on the above
 
 TODO: Add further small challenges /variations for students for whom this is far, far too easy, so that we still learn something from the assessment task.
 
+# Example solution(s)
+
+![example solution](giraffe_loop_example_soln.png)
 
 # Potential issues:
 
