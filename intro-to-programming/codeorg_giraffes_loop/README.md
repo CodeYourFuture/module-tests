@@ -4,4 +4,4 @@ Task:
 
 Use some of the available blocks to make a drawing as close as possible to the following:
 
-!["three giraffes standing in a line"]()
+!["three giraffes standing in a line"](assessment_task_course3_3.15_draw_three_giraffes.png)
