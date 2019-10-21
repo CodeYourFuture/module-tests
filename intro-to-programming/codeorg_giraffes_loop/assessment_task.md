@@ -6,6 +6,6 @@ Task:
 
 1. Use some of the available blocks to make a drawing as close as possible to the following image:  !["three giraffes standing in a line"](assessment_task_course3_3.15_draw_three_giraffes.png)
 
-1. (Bonus) Ensure the whole image fits on screen, as pictured.
+1. (Optional) Ensure the whole image fits on screen, as pictured.
 
-1. (Bonus) Use as few blocks as possible
+1. (Optional) Use as few blocks as possible
