@@ -1,4 +1,4 @@
-# Code.org "Three Giraffes" activity
+# Coding Task (Code.org) "Three Giraffes" - List of documents
 
 * [assessment task - student may see this](assessment_task.md)
 * [mentor notes](mentor_notes.md)
