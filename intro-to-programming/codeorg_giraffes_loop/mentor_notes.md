@@ -1,3 +1,5 @@
+# Mentor notes for "three giraffes" activity
+
 # Time 1 - 10 minutes
 
 # What's being assessed here?
