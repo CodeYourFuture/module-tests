@@ -1,4 +1,4 @@
-Coding Task: "Three Giraffes" - student copy 
+# Coding Task: "Three Giraffes" - student copy 
 
 1. [Visit this sandbox stage 3.15](https://studio.code.org/s/course3/stage/3/puzzle/15)
 
