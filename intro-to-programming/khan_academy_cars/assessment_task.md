@@ -1,4 +1,4 @@
-### Task
+# Coding Task - "Khan Cars" (student copy)
 
 1. [Open this sandbox coding environment](https://www.khanacademy.org/computer-programming/cyf-intro-to-programming-step-0/5809430823665664)
 2. Take some time to read the code and understand it
