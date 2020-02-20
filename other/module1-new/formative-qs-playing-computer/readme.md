@@ -11,9 +11,8 @@ These should be done in isolation, then group, with complete predictions always 
 
 Don't give the students an interpreter when doing these.
 
-## Note: 
+**Don't** present these files to students in their current form!  The "What's being assessed" sections are intended only for mentors to see, for example.
 
-Don't present these files to students in their current form!  The "What's being assessed" sections are intended only for mentors to see, for example.
 
 
 ## TODO: 
